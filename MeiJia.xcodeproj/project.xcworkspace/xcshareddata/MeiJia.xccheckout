@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>579EA182-87D2-4906-9625-3317E4EB4FA4</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MeiJia</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>88C1E68B-8B21-4D18-804C-7C6CE75DF170</key>
+		<string>https://github.com/ralbatr/MeiJia.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MeiJia.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>88C1E68B-8B21-4D18-804C-7C6CE75DF170</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ralbatr/MeiJia.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>88C1E68B-8B21-4D18-804C-7C6CE75DF170</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>88C1E68B-8B21-4D18-804C-7C6CE75DF170</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MeiJia</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -29,12 +29,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    _bookArray = [NSArray arrayWithObjects:@"套餐类别", @"套餐类别", @"套餐类别", @"套餐类别", nil];
+	// 美甲师 简单介绍
     [self creatView];
+    // 产品 和 预约列表 两个按钮
     [self creatUISegmentedControl];
     [self initTableViewAndSegment];
     _timeSegment.hidden = YES;
-    _bookArray = [NSArray arrayWithObjects:@"套餐类别", @"套餐类别", @"套餐类别", @"套餐类别", nil];
 }
 
 - (void)initTableViewAndSegment
@@ -53,6 +54,7 @@
 
 - (void)creatView
 {
+    //技师个人介绍
     ArtificerView *artificerView = [[ArtificerView alloc] initWithFrame:CGRectMake(5, 65, 70, 87) WithTarget:self andSelector:@selector(bookArtificer) andHideWorkYear:YES];
     [self.view addSubview:artificerView];
     
@@ -61,7 +63,6 @@
     _workYearlabel.text = @"工作年限：5年";
     _workYearlabel.font = [UIFont systemFontOfSize:14];
     [self.view addSubview:_workYearlabel];
-
 }
 
 - (void)creatUISegmentedControl
@@ -77,7 +78,7 @@
 - (void)bookArtificer
 {
     BookDetailViewController *bookDetailViewController = [[BookDetailViewController alloc] init];
-    bookDetailViewController.title = @"技师介绍";
+    bookDetailViewController.title = @"预约单";
     [self.navigationController pushViewController:bookDetailViewController animated:YES];
 }
 

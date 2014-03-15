@@ -28,12 +28,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    _discArray = [NSArray arrayWithObjects:@"工号： NS8766732",@"工号： NS8766732", @"工号： NS8766732",@"工号： NS8766732",@"工号： NS8766732",@"工号： NS8766732",@"工号： NS8766732",@"工号： NS8766732",@"工号： NS8766732",nil];
     [self creatTableView];
 }
 
 - (void)creatTableView
 {
-    _discArray = [NSArray arrayWithObjects:@"工号： NS8766732",@"工号： NS8766732", @"工号： NS8766732",@"工号： NS8766732",@"工号： NS8766732",@"工号： NS8766732",@"工号： NS8766732",@"工号： NS8766732",@"工号： NS8766732",nil];
     _tableView = [[UITableView alloc] init];
     _tableView.frame = CGRectMake(0, 0, 320, 508);
     _tableView.dataSource = self;

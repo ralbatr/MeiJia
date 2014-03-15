@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MeiJia/AboutWorkerViewController.m"
-            timestampString = "416548307.680602"
+            timestampString = "416565786.49925"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "79"
-            endingLineNumber = "79"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
             landmarkName = "-bookArtificer"
             landmarkType = "5">
          </BreakpointContent>

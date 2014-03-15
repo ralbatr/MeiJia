@@ -7,6 +7,7 @@
 //
 
 #import "BookDetailViewController.h"
+#import "TimePickerView.h"
 
 @interface BookDetailViewController ()
 
@@ -78,13 +79,31 @@
     [self.view addSubview:label2];
 }
 
+- (void)creatDatepacker
+{
+    _timePickerView = [[TimePickerView alloc] initWithFrame:CGRectMake(0, 40, 320, 450) WithTarget:self andSelector:@selector(action:)];
+    _timePickerView.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:_timePickerView];
+}
+
+- (void)action:(id)sender
+{
+    _timePickerView.hidden = YES;
+}
+
 - (void)creatTextField
 {
-    UITextField *nameTextField = [[UITextField alloc] init];
-    nameTextField.frame = CGRectMake(90, 125, 220, 25);
-//    nameTextField.backgroundColor = [UIColor redColor];
-    nameTextField.placeholder = @"请输入姓名";
-    [self.view addSubview:nameTextField];
+    _nameTextField = [[UITextField alloc] init];
+    _nameTextField.frame = CGRectMake(90, 125, 220, 25);
+    _nameTextField.placeholder = @"请输入姓名";
+    _nameTextField.delegate = self;
+    [self.view addSubview:_nameTextField];
+    
+    _timeButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    _timeButton.frame = CGRectMake(200, 155, 60, 30);
+    [_timeButton addTarget:self action:@selector(creatDatepacker) forControlEvents:UIControlEventTouchUpInside];
+    [_timeButton setTitle:@"选取时间" forState:UIControlStateNormal];
+    [self.view addSubview:_timeButton];
 }
 
 - (void)creatButtons
@@ -106,10 +125,10 @@
     
 }
 
-- (void)didReceiveMemoryWarning
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    [textField resignFirstResponder];
+    return YES;
 }
 
 @end

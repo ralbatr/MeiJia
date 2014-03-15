@@ -16,7 +16,6 @@
     if (self) {
         // Initialization code
         [self creatViewHideWorkYear:workYear];
-//        [self creatView];
         [self creatViewWithTarget:target andSelector:selector];
     }
     return self;
@@ -60,7 +59,6 @@
     UIButton *bookButton = [UIButton buttonWithType:UIButtonTypeSystem];
     bookButton.frame = CGRectMake(180, 50, 100, 40);
     [bookButton setTitle:@"预约" forState:UIControlStateNormal];
-//    bookButton.backgroundColor = [UIColor redColor];
     [bookButton addTarget:target action:selector forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:bookButton];
 }

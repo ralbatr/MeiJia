@@ -28,20 +28,24 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self creatImageView];
+    [self creatTableView];
+    
+    _discArray = [NSArray arrayWithObjects:@"服务项目1",@"服务项目2", @"服务项目3",@"服务项目4",@"服务项目5",@"服务项目6",@"服务项目7",@"服务项目8",@"服务项目9",@"服务项目10",@"服务项目11",@"服务项目12",nil];
+}
+
+- (void)creatImageView
+{
     UIImageView *imageView = [[UIImageView alloc] init];
-    imageView.frame = CGRectMake(0, 65, 320, 150);
+    imageView.frame = CGRectMake(0, 60, 320, 150);
     imageView.image = [UIImage imageNamed:@"u24_normal.png"];
     [self.view addSubview:imageView];
-    
-    [self creatTableView];
-//    [self creatScrollView];
 }
 
 - (void)creatTableView
 {
-    _discArray = [NSArray arrayWithObjects:@"服务项目1",@"服务项目2", @"服务项目3",@"服务项目4",@"服务项目5",@"服务项目6",@"服务项目7",@"服务项目8",@"服务项目9",@"服务项目10",@"服务项目11",@"服务项目12",nil];
     _tableView = [[UITableView alloc] init];
-    _tableView.frame = CGRectMake(20, 205, 320, 300);
+    _tableView.frame = CGRectMake(20, 210, 320, 300);
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     [self.view addSubview:_tableView];

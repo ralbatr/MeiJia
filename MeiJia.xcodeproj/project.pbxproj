@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DF1403E018D2536B00FA82C7 /* AboutWorkerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1403DF18D2536B00FA82C7 /* AboutWorkerViewController.m */; };
+		DF1403E418D2672A00FA82C7 /* bookResultView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1403E318D2672A00FA82C7 /* bookResultView.m */; };
+		DF90B22E18D22F93005A3CE7 /* u24_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = DF90B22D18D22F93005A3CE7 /* u24_normal.png */; };
+		DF90B23018D2301F005A3CE7 /* u29_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = DF90B22F18D2301F005A3CE7 /* u29_normal.png */; };
+		DF90B23218D23026005A3CE7 /* u31_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = DF90B23118D23026005A3CE7 /* u31_normal.png */; };
+		DF90B23418D2302E005A3CE7 /* u37_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = DF90B23318D2302E005A3CE7 /* u37_normal.png */; };
+		DF90B23718D234D8005A3CE7 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF90B23618D234D8005A3CE7 /* AboutViewController.m */; };
+		DF90B23918D23566005A3CE7 /* u61_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = DF90B23818D23566005A3CE7 /* u61_normal.png */; };
+		DF90B23B18D236BE005A3CE7 /* u9_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = DF90B23A18D236BE005A3CE7 /* u9_normal.png */; };
+		DF90B23D18D236F0005A3CE7 /* u11_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = DF90B23C18D236F0005A3CE7 /* u11_normal.png */; };
+		DF90B24018D23B46005A3CE7 /* BookDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF90B23F18D23B46005A3CE7 /* BookDetailViewController.m */; };
+		DF90B24218D245E6005A3CE7 /* u80_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = DF90B24118D245E6005A3CE7 /* u80_normal.png */; };
+		DFA5948E18D2AACD0030EF99 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFA5948D18D2AACD0030EF99 /* Foundation.framework */; };
+		DFA5949018D2AACD0030EF99 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFA5948F18D2AACD0030EF99 /* CoreGraphics.framework */; };
+		DFA5949218D2AACD0030EF99 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFA5949118D2AACD0030EF99 /* UIKit.framework */; };
+		DFA5949818D2AACD0030EF99 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DFA5949618D2AACD0030EF99 /* InfoPlist.strings */; };
+		DFA5949A18D2AACD0030EF99 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA5949918D2AACD0030EF99 /* main.m */; };
+		DFA5949E18D2AACD0030EF99 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA5949D18D2AACD0030EF99 /* AppDelegate.m */; };
+		DFA594A018D2AACD0030EF99 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFA5949F18D2AACD0030EF99 /* Images.xcassets */; };
+		DFA594A718D2AACD0030EF99 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFA594A618D2AACD0030EF99 /* XCTest.framework */; };
+		DFA594A818D2AACD0030EF99 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFA5948D18D2AACD0030EF99 /* Foundation.framework */; };
+		DFA594A918D2AACD0030EF99 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFA5949118D2AACD0030EF99 /* UIKit.framework */; };
+		DFA594B118D2AACD0030EF99 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DFA594AF18D2AACD0030EF99 /* InfoPlist.strings */; };
+		DFA594B318D2AACD0030EF99 /* MeiJiaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA594B218D2AACD0030EF99 /* MeiJiaTests.m */; };
+		DFA594BE18D2AB420030EF99 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA594BD18D2AB420030EF99 /* HomeViewController.m */; };
+		DFA594C118D2AB4E0030EF99 /* ServerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA594C018D2AB4E0030EF99 /* ServerViewController.m */; };
+		DFA594C418D2AC7E0030EF99 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA594C318D2AC7E0030EF99 /* MainViewController.m */; };
+		DFA8D49B18D227A600C7EBE0 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA8D49A18D227A600C7EBE0 /* FirstViewController.m */; };
+		DFA8D49E18D227B700C7EBE0 /* BookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA8D49D18D227B700C7EBE0 /* BookViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DFA594AA18D2AACD0030EF99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFA5948218D2AACD0030EF99 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFA5948918D2AACD0030EF99;
+			remoteInfo = MeiJia;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DF1403DE18D2536B00FA82C7 /* AboutWorkerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutWorkerViewController.h; sourceTree = "<group>"; };
+		DF1403DF18D2536B00FA82C7 /* AboutWorkerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutWorkerViewController.m; sourceTree = "<group>"; };
+		DF1403E218D2672A00FA82C7 /* bookResultView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bookResultView.h; sourceTree = "<group>"; };
+		DF1403E318D2672A00FA82C7 /* bookResultView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bookResultView.m; sourceTree = "<group>"; };
+		DF90B22D18D22F93005A3CE7 /* u24_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = u24_normal.png; sourceTree = "<group>"; };
+		DF90B22F18D2301F005A3CE7 /* u29_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = u29_normal.png; sourceTree = "<group>"; };
+		DF90B23118D23026005A3CE7 /* u31_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = u31_normal.png; sourceTree = "<group>"; };
+		DF90B23318D2302E005A3CE7 /* u37_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = u37_normal.png; sourceTree = "<group>"; };
+		DF90B23518D234D8005A3CE7 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		DF90B23618D234D8005A3CE7 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		DF90B23818D23566005A3CE7 /* u61_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = u61_normal.png; sourceTree = "<group>"; };
+		DF90B23A18D236BE005A3CE7 /* u9_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = u9_normal.png; sourceTree = "<group>"; };
+		DF90B23C18D236F0005A3CE7 /* u11_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = u11_normal.png; sourceTree = "<group>"; };
+		DF90B23E18D23B46005A3CE7 /* BookDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookDetailViewController.h; sourceTree = "<group>"; };
+		DF90B23F18D23B46005A3CE7 /* BookDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookDetailViewController.m; sourceTree = "<group>"; };
+		DF90B24118D245E6005A3CE7 /* u80_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = u80_normal.png; sourceTree = "<group>"; };
+		DFA5948A18D2AACD0030EF99 /* MeiJia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeiJia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFA5948D18D2AACD0030EF99 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DFA5948F18D2AACD0030EF99 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DFA5949118D2AACD0030EF99 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DFA5949518D2AACD0030EF99 /* MeiJia-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MeiJia-Info.plist"; sourceTree = "<group>"; };
+		DFA5949718D2AACD0030EF99 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DFA5949918D2AACD0030EF99 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DFA5949B18D2AACD0030EF99 /* MeiJia-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MeiJia-Prefix.pch"; sourceTree = "<group>"; };
+		DFA5949C18D2AACD0030EF99 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DFA5949D18D2AACD0030EF99 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DFA5949F18D2AACD0030EF99 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DFA594A518D2AACD0030EF99 /* MeiJiaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeiJiaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFA594A618D2AACD0030EF99 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		DFA594AE18D2AACD0030EF99 /* MeiJiaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MeiJiaTests-Info.plist"; sourceTree = "<group>"; };
+		DFA594B018D2AACD0030EF99 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DFA594B218D2AACD0030EF99 /* MeiJiaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeiJiaTests.m; sourceTree = "<group>"; };
+		DFA594BC18D2AB420030EF99 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		DFA594BD18D2AB420030EF99 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		DFA594BF18D2AB4E0030EF99 /* ServerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerViewController.h; sourceTree = "<group>"; };
+		DFA594C018D2AB4E0030EF99 /* ServerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerViewController.m; sourceTree = "<group>"; };
+		DFA594C218D2AC7E0030EF99 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		DFA594C318D2AC7E0030EF99 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		DFA8D49918D227A600C7EBE0 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FirstViewController.h; path = ../FirstViewController.h; sourceTree = "<group>"; };
+		DFA8D49A18D227A600C7EBE0 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirstViewController.m; path = ../FirstViewController.m; sourceTree = "<group>"; };
+		DFA8D49C18D227B700C7EBE0 /* BookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BookViewController.h; path = ../BookViewController.h; sourceTree = "<group>"; };
+		DFA8D49D18D227B700C7EBE0 /* BookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BookViewController.m; path = ../BookViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DFA5948718D2AACD0030EF99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFA5949018D2AACD0030EF99 /* CoreGraphics.framework in Frameworks */,
+				DFA5949218D2AACD0030EF99 /* UIKit.framework in Frameworks */,
+				DFA5948E18D2AACD0030EF99 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFA594A218D2AACD0030EF99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFA594A718D2AACD0030EF99 /* XCTest.framework in Frameworks */,
+				DFA594A918D2AACD0030EF99 /* UIKit.framework in Frameworks */,
+				DFA594A818D2AACD0030EF99 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DF1403E118D2670400FA82C7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DF1403E218D2672A00FA82C7 /* bookResultView.h */,
+				DF1403E318D2672A00FA82C7 /* bookResultView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		DFA5948118D2AACD0030EF99 = {
+			isa = PBXGroup;
+			children = (
+				DFA5949318D2AACD0030EF99 /* MeiJia */,
+				DFA594AC18D2AACD0030EF99 /* MeiJiaTests */,
+				DFA5948C18D2AACD0030EF99 /* Frameworks */,
+				DFA5948B18D2AACD0030EF99 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DFA5948B18D2AACD0030EF99 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DFA5948A18D2AACD0030EF99 /* MeiJia.app */,
+				DFA594A518D2AACD0030EF99 /* MeiJiaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DFA5948C18D2AACD0030EF99 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DFA5948D18D2AACD0030EF99 /* Foundation.framework */,
+				DFA5948F18D2AACD0030EF99 /* CoreGraphics.framework */,
+				DFA5949118D2AACD0030EF99 /* UIKit.framework */,
+				DFA594A618D2AACD0030EF99 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DFA5949318D2AACD0030EF99 /* MeiJia */ = {
+			isa = PBXGroup;
+			children = (
+				DFAA26A018D2A07A00F728F2 /* 美甲秀 */,
+				DFAA26A118D2A09300F728F2 /* 预约 */,
+				DFAA26A218D2A0AB00F728F2 /* 会员中心 */,
+				DF1403E118D2670400FA82C7 /* View */,
+				DF90B23E18D23B46005A3CE7 /* BookDetailViewController.h */,
+				DF90B23F18D23B46005A3CE7 /* BookDetailViewController.m */,
+				DF1403DE18D2536B00FA82C7 /* AboutWorkerViewController.h */,
+				DF1403DF18D2536B00FA82C7 /* AboutWorkerViewController.m */,
+				DFA8D49918D227A600C7EBE0 /* FirstViewController.h */,
+				DFA8D49A18D227A600C7EBE0 /* FirstViewController.m */,
+				DF90B23518D234D8005A3CE7 /* AboutViewController.h */,
+				DF90B23618D234D8005A3CE7 /* AboutViewController.m */,
+				DFA5949C18D2AACD0030EF99 /* AppDelegate.h */,
+				DFA5949D18D2AACD0030EF99 /* AppDelegate.m */,
+				DFA5949F18D2AACD0030EF99 /* Images.xcassets */,
+				DFA5949418D2AACD0030EF99 /* Supporting Files */,
+				DFA594C218D2AC7E0030EF99 /* MainViewController.h */,
+				DFA594C318D2AC7E0030EF99 /* MainViewController.m */,
+			);
+			path = MeiJia;
+			sourceTree = "<group>";
+		};
+		DFA5949418D2AACD0030EF99 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DF90B23818D23566005A3CE7 /* u61_normal.png */,
+				DF90B22F18D2301F005A3CE7 /* u29_normal.png */,
+				DF90B24118D245E6005A3CE7 /* u80_normal.png */,
+				DF90B22D18D22F93005A3CE7 /* u24_normal.png */,
+				DF90B23C18D236F0005A3CE7 /* u11_normal.png */,
+				DF90B23A18D236BE005A3CE7 /* u9_normal.png */,
+				DF90B23318D2302E005A3CE7 /* u37_normal.png */,
+				DF90B23118D23026005A3CE7 /* u31_normal.png */,
+				DFA5949518D2AACD0030EF99 /* MeiJia-Info.plist */,
+				DFA5949618D2AACD0030EF99 /* InfoPlist.strings */,
+				DFA5949918D2AACD0030EF99 /* main.m */,
+				DFA5949B18D2AACD0030EF99 /* MeiJia-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DFA594AC18D2AACD0030EF99 /* MeiJiaTests */ = {
+			isa = PBXGroup;
+			children = (
+				DFA594B218D2AACD0030EF99 /* MeiJiaTests.m */,
+				DFA594AD18D2AACD0030EF99 /* Supporting Files */,
+			);
+			path = MeiJiaTests;
+			sourceTree = "<group>";
+		};
+		DFA594AD18D2AACD0030EF99 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DFA594AE18D2AACD0030EF99 /* MeiJiaTests-Info.plist */,
+				DFA594AF18D2AACD0030EF99 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DFAA26A018D2A07A00F728F2 /* 美甲秀 */ = {
+			isa = PBXGroup;
+			children = (
+				DFA594BC18D2AB420030EF99 /* HomeViewController.h */,
+				DFA594BD18D2AB420030EF99 /* HomeViewController.m */,
+			);
+			name = "美甲秀";
+			sourceTree = "<group>";
+		};
+		DFAA26A118D2A09300F728F2 /* 预约 */ = {
+			isa = PBXGroup;
+			children = (
+				DFA8D49C18D227B700C7EBE0 /* BookViewController.h */,
+				DFA8D49D18D227B700C7EBE0 /* BookViewController.m */,
+			);
+			name = "预约";
+			sourceTree = "<group>";
+		};
+		DFAA26A218D2A0AB00F728F2 /* 会员中心 */ = {
+			isa = PBXGroup;
+			children = (
+				DFA594BF18D2AB4E0030EF99 /* ServerViewController.h */,
+				DFA594C018D2AB4E0030EF99 /* ServerViewController.m */,
+			);
+			name = "会员中心";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DFA5948918D2AACD0030EF99 /* MeiJia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFA594B618D2AACD0030EF99 /* Build configuration list for PBXNativeTarget "MeiJia" */;
+			buildPhases = (
+				DFA5948618D2AACD0030EF99 /* Sources */,
+				DFA5948718D2AACD0030EF99 /* Frameworks */,
+				DFA5948818D2AACD0030EF99 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MeiJia;
+			productName = MeiJia;
+			productReference = DFA5948A18D2AACD0030EF99 /* MeiJia.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DFA594A418D2AACD0030EF99 /* MeiJiaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFA594B918D2AACD0030EF99 /* Build configuration list for PBXNativeTarget "MeiJiaTests" */;
+			buildPhases = (
+				DFA594A118D2AACD0030EF99 /* Sources */,
+				DFA594A218D2AACD0030EF99 /* Frameworks */,
+				DFA594A318D2AACD0030EF99 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DFA594AB18D2AACD0030EF99 /* PBXTargetDependency */,
+			);
+			name = MeiJiaTests;
+			productName = MeiJiaTests;
+			productReference = DFA594A518D2AACD0030EF99 /* MeiJiaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DFA5948218D2AACD0030EF99 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Ralbatr;
+				TargetAttributes = {
+					DFA594A418D2AACD0030EF99 = {
+						TestTargetID = DFA5948918D2AACD0030EF99;
+					};
+				};
+			};
+			buildConfigurationList = DFA5948518D2AACD0030EF99 /* Build configuration list for PBXProject "MeiJia" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DFA5948118D2AACD0030EF99;
+			productRefGroup = DFA5948B18D2AACD0030EF99 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DFA5948918D2AACD0030EF99 /* MeiJia */,
+				DFA594A418D2AACD0030EF99 /* MeiJiaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DFA5948818D2AACD0030EF99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF90B23D18D236F0005A3CE7 /* u11_normal.png in Resources */,
+				DF90B22E18D22F93005A3CE7 /* u24_normal.png in Resources */,
+				DF90B24218D245E6005A3CE7 /* u80_normal.png in Resources */,
+				DF90B23018D2301F005A3CE7 /* u29_normal.png in Resources */,
+				DF90B23418D2302E005A3CE7 /* u37_normal.png in Resources */,
+				DFA5949818D2AACD0030EF99 /* InfoPlist.strings in Resources */,
+				DF90B23218D23026005A3CE7 /* u31_normal.png in Resources */,
+				DFA594A018D2AACD0030EF99 /* Images.xcassets in Resources */,
+				DF90B23B18D236BE005A3CE7 /* u9_normal.png in Resources */,
+				DF90B23918D23566005A3CE7 /* u61_normal.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFA594A318D2AACD0030EF99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFA594B118D2AACD0030EF99 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DFA5948618D2AACD0030EF99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFA5949E18D2AACD0030EF99 /* AppDelegate.m in Sources */,
+				DFA8D49B18D227A600C7EBE0 /* FirstViewController.m in Sources */,
+				DF90B23718D234D8005A3CE7 /* AboutViewController.m in Sources */,
+				DFA8D49E18D227B700C7EBE0 /* BookViewController.m in Sources */,
+				DFA5949A18D2AACD0030EF99 /* main.m in Sources */,
+				DF1403E418D2672A00FA82C7 /* bookResultView.m in Sources */,
+				DFA594BE18D2AB420030EF99 /* HomeViewController.m in Sources */,
+				DF1403E018D2536B00FA82C7 /* AboutWorkerViewController.m in Sources */,
+				DFA594C418D2AC7E0030EF99 /* MainViewController.m in Sources */,
+				DFA594C118D2AB4E0030EF99 /* ServerViewController.m in Sources */,
+				DF90B24018D23B46005A3CE7 /* BookDetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFA594A118D2AACD0030EF99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFA594B318D2AACD0030EF99 /* MeiJiaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DFA594AB18D2AACD0030EF99 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DFA5948918D2AACD0030EF99 /* MeiJia */;
+			targetProxy = DFA594AA18D2AACD0030EF99 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DFA5949618D2AACD0030EF99 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFA5949718D2AACD0030EF99 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DFA594AF18D2AACD0030EF99 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFA594B018D2AACD0030EF99 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DFA594B418D2AACD0030EF99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DFA594B518D2AACD0030EF99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DFA594B718D2AACD0030EF99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MeiJia/MeiJia-Prefix.pch";
+				INFOPLIST_FILE = "MeiJia/MeiJia-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DFA594B818D2AACD0030EF99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MeiJia/MeiJia-Prefix.pch";
+				INFOPLIST_FILE = "MeiJia/MeiJia-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DFA594BA18D2AACD0030EF99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MeiJia.app/MeiJia";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MeiJia/MeiJia-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MeiJiaTests/MeiJiaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		DFA594BB18D2AACD0030EF99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MeiJia.app/MeiJia";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MeiJia/MeiJia-Prefix.pch";
+				INFOPLIST_FILE = "MeiJiaTests/MeiJiaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DFA5948518D2AACD0030EF99 /* Build configuration list for PBXProject "MeiJia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFA594B418D2AACD0030EF99 /* Debug */,
+				DFA594B518D2AACD0030EF99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFA594B618D2AACD0030EF99 /* Build configuration list for PBXNativeTarget "MeiJia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFA594B718D2AACD0030EF99 /* Debug */,
+				DFA594B818D2AACD0030EF99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFA594B918D2AACD0030EF99 /* Build configuration list for PBXNativeTarget "MeiJiaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFA594BA18D2AACD0030EF99 /* Debug */,
+				DFA594BB18D2AACD0030EF99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DFA5948218D2AACD0030EF99 /* Project object */;
+}

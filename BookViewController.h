@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BookViewController : UIViewController <UIScrollViewDelegate>
+@interface BookViewController : UIViewController <UITableViewDataSource,UITableViewDelegate>
 
-@property (nonatomic,strong) UIScrollView *scrollView;
+@property (nonatomic,strong) UITableView *tableView;
+@property (nonatomic,strong) NSArray *discArray;
 
 @end

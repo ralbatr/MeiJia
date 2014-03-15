@@ -24,7 +24,6 @@
 		DFA5949218D2AACD0030EF99 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFA5949118D2AACD0030EF99 /* UIKit.framework */; };
 		DFA5949818D2AACD0030EF99 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DFA5949618D2AACD0030EF99 /* InfoPlist.strings */; };
 		DFA5949A18D2AACD0030EF99 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA5949918D2AACD0030EF99 /* main.m */; };
-		DFA5949E18D2AACD0030EF99 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA5949D18D2AACD0030EF99 /* AppDelegate.m */; };
 		DFA594A018D2AACD0030EF99 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFA5949F18D2AACD0030EF99 /* Images.xcassets */; };
 		DFA594A718D2AACD0030EF99 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFA594A618D2AACD0030EF99 /* XCTest.framework */; };
 		DFA594A818D2AACD0030EF99 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFA5948D18D2AACD0030EF99 /* Foundation.framework */; };
@@ -36,6 +35,11 @@
 		DFA594C418D2AC7E0030EF99 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA594C318D2AC7E0030EF99 /* MainViewController.m */; };
 		DFA8D49B18D227A600C7EBE0 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA8D49A18D227A600C7EBE0 /* FirstViewController.m */; };
 		DFA8D49E18D227B700C7EBE0 /* BookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA8D49D18D227B700C7EBE0 /* BookViewController.m */; };
+		DFAA26E618D2A2D100F728F2 /* ArtificerView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFAA26E518D2A2D100F728F2 /* ArtificerView.m */; };
+		DFDA2DE818D3E2E200BF2814 /* ServierView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFDA2DE718D3E2E200BF2814 /* ServierView.m */; };
+		DFDA2DEB18D3EAE400BF2814 /* ArtificerListView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFDA2DEA18D3EAE400BF2814 /* ArtificerListView.m */; };
+		DFDA2DEE18D3F20A00BF2814 /* ProductView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFDA2DED18D3F20A00BF2814 /* ProductView.m */; };
+		DFDA2DF018D3FA4D00BF2814 /* u63_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = DFDA2DEF18D3FA4D00BF2814 /* u63_normal.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,8 +77,6 @@
 		DFA5949718D2AACD0030EF99 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DFA5949918D2AACD0030EF99 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DFA5949B18D2AACD0030EF99 /* MeiJia-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MeiJia-Prefix.pch"; sourceTree = "<group>"; };
-		DFA5949C18D2AACD0030EF99 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		DFA5949D18D2AACD0030EF99 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		DFA5949F18D2AACD0030EF99 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DFA594A518D2AACD0030EF99 /* MeiJiaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeiJiaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFA594A618D2AACD0030EF99 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -91,6 +93,15 @@
 		DFA8D49A18D227A600C7EBE0 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirstViewController.m; path = ../FirstViewController.m; sourceTree = "<group>"; };
 		DFA8D49C18D227B700C7EBE0 /* BookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BookViewController.h; path = ../BookViewController.h; sourceTree = "<group>"; };
 		DFA8D49D18D227B700C7EBE0 /* BookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BookViewController.m; path = ../BookViewController.m; sourceTree = "<group>"; };
+		DFAA26E418D2A2D100F728F2 /* ArtificerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtificerView.h; sourceTree = "<group>"; };
+		DFAA26E518D2A2D100F728F2 /* ArtificerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtificerView.m; sourceTree = "<group>"; };
+		DFDA2DE618D3E2E200BF2814 /* ServierView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServierView.h; sourceTree = "<group>"; };
+		DFDA2DE718D3E2E200BF2814 /* ServierView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServierView.m; sourceTree = "<group>"; };
+		DFDA2DE918D3EAE400BF2814 /* ArtificerListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtificerListView.h; sourceTree = "<group>"; };
+		DFDA2DEA18D3EAE400BF2814 /* ArtificerListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtificerListView.m; sourceTree = "<group>"; };
+		DFDA2DEC18D3F20A00BF2814 /* ProductView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductView.h; sourceTree = "<group>"; };
+		DFDA2DED18D3F20A00BF2814 /* ProductView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductView.m; sourceTree = "<group>"; };
+		DFDA2DEF18D3FA4D00BF2814 /* u63_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = u63_normal.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,8 +133,25 @@
 			children = (
 				DF1403E218D2672A00FA82C7 /* bookResultView.h */,
 				DF1403E318D2672A00FA82C7 /* bookResultView.m */,
+				DFAA26E418D2A2D100F728F2 /* ArtificerView.h */,
+				DFAA26E518D2A2D100F728F2 /* ArtificerView.m */,
+				DFDA2DE918D3EAE400BF2814 /* ArtificerListView.h */,
+				DFDA2DEA18D3EAE400BF2814 /* ArtificerListView.m */,
+				DFDA2DE618D3E2E200BF2814 /* ServierView.h */,
+				DFDA2DE718D3E2E200BF2814 /* ServierView.m */,
+				DFDA2DEC18D3F20A00BF2814 /* ProductView.h */,
+				DFDA2DED18D3F20A00BF2814 /* ProductView.m */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		DF7517E818D3D98600C2947F /* 预约单 */ = {
+			isa = PBXGroup;
+			children = (
+				DF90B23E18D23B46005A3CE7 /* BookDetailViewController.h */,
+				DF90B23F18D23B46005A3CE7 /* BookDetailViewController.m */,
+			);
+			name = "预约单";
 			sourceTree = "<group>";
 		};
 		DFA5948118D2AACD0030EF99 = {
@@ -163,16 +191,9 @@
 				DFAA26A118D2A09300F728F2 /* 预约 */,
 				DFAA26A218D2A0AB00F728F2 /* 会员中心 */,
 				DF1403E118D2670400FA82C7 /* View */,
-				DF90B23E18D23B46005A3CE7 /* BookDetailViewController.h */,
-				DF90B23F18D23B46005A3CE7 /* BookDetailViewController.m */,
-				DF1403DE18D2536B00FA82C7 /* AboutWorkerViewController.h */,
-				DF1403DF18D2536B00FA82C7 /* AboutWorkerViewController.m */,
+				DF7517E818D3D98600C2947F /* 预约单 */,
 				DFA8D49918D227A600C7EBE0 /* FirstViewController.h */,
 				DFA8D49A18D227A600C7EBE0 /* FirstViewController.m */,
-				DF90B23518D234D8005A3CE7 /* AboutViewController.h */,
-				DF90B23618D234D8005A3CE7 /* AboutViewController.m */,
-				DFA5949C18D2AACD0030EF99 /* AppDelegate.h */,
-				DFA5949D18D2AACD0030EF99 /* AppDelegate.m */,
 				DFA5949F18D2AACD0030EF99 /* Images.xcassets */,
 				DFA5949418D2AACD0030EF99 /* Supporting Files */,
 				DFA594C218D2AC7E0030EF99 /* MainViewController.h */,
@@ -184,6 +205,7 @@
 		DFA5949418D2AACD0030EF99 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DFDA2DEF18D3FA4D00BF2814 /* u63_normal.png */,
 				DF90B23818D23566005A3CE7 /* u61_normal.png */,
 				DF90B22F18D2301F005A3CE7 /* u29_normal.png */,
 				DF90B24118D245E6005A3CE7 /* u80_normal.png */,
@@ -223,6 +245,8 @@
 			children = (
 				DFA594BC18D2AB420030EF99 /* HomeViewController.h */,
 				DFA594BD18D2AB420030EF99 /* HomeViewController.m */,
+				DF90B23518D234D8005A3CE7 /* AboutViewController.h */,
+				DF90B23618D234D8005A3CE7 /* AboutViewController.m */,
 			);
 			name = "美甲秀";
 			sourceTree = "<group>";
@@ -232,6 +256,8 @@
 			children = (
 				DFA8D49C18D227B700C7EBE0 /* BookViewController.h */,
 				DFA8D49D18D227B700C7EBE0 /* BookViewController.m */,
+				DF1403DE18D2536B00FA82C7 /* AboutWorkerViewController.h */,
+				DF1403DF18D2536B00FA82C7 /* AboutWorkerViewController.m */,
 			);
 			name = "预约";
 			sourceTree = "<group>";
@@ -329,6 +355,7 @@
 				DF90B23218D23026005A3CE7 /* u31_normal.png in Resources */,
 				DFA594A018D2AACD0030EF99 /* Images.xcassets in Resources */,
 				DF90B23B18D236BE005A3CE7 /* u9_normal.png in Resources */,
+				DFDA2DF018D3FA4D00BF2814 /* u63_normal.png in Resources */,
 				DF90B23918D23566005A3CE7 /* u61_normal.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,14 +375,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFA5949E18D2AACD0030EF99 /* AppDelegate.m in Sources */,
 				DFA8D49B18D227A600C7EBE0 /* FirstViewController.m in Sources */,
 				DF90B23718D234D8005A3CE7 /* AboutViewController.m in Sources */,
+				DFDA2DE818D3E2E200BF2814 /* ServierView.m in Sources */,
 				DFA8D49E18D227B700C7EBE0 /* BookViewController.m in Sources */,
 				DFA5949A18D2AACD0030EF99 /* main.m in Sources */,
 				DF1403E418D2672A00FA82C7 /* bookResultView.m in Sources */,
+				DFAA26E618D2A2D100F728F2 /* ArtificerView.m in Sources */,
 				DFA594BE18D2AB420030EF99 /* HomeViewController.m in Sources */,
 				DF1403E018D2536B00FA82C7 /* AboutWorkerViewController.m in Sources */,
+				DFDA2DEB18D3EAE400BF2814 /* ArtificerListView.m in Sources */,
+				DFDA2DEE18D3F20A00BF2814 /* ProductView.m in Sources */,
 				DFA594C418D2AC7E0030EF99 /* MainViewController.m in Sources */,
 				DFA594C118D2AB4E0030EF99 /* ServerViewController.m in Sources */,
 				DF90B24018D23B46005A3CE7 /* BookDetailViewController.m in Sources */,

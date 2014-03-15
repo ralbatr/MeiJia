@@ -8,6 +8,7 @@
 
 #import "BookViewController.h"
 #import "AboutWorkerViewController.h"
+#import "ArtificerListView.h"
 
 @interface BookViewController ()
 
@@ -26,47 +27,18 @@
 
 - (void)viewDidLoad
 {
-    self.title = @"美甲技师";
     [super viewDidLoad];
-    [self creatScrollView];
-    [self creatButton];
+    [self creatTableView];
 }
 
-- (void)creatScrollView
+- (void)creatTableView
 {
-    _scrollView = [[UIScrollView alloc] init];
-    _scrollView.frame = CGRectMake(0, 45, 320, 508);
-    //    _scrollView.backgroundColor = [UIColor redColor];
-    _scrollView.pagingEnabled = YES;
-    _scrollView.showsHorizontalScrollIndicator = YES;
-    _scrollView.showsVerticalScrollIndicator = NO;
-    _scrollView.delegate = self;
-    CGSize newSize = CGSizeMake(320, self.view.frame.size.height*2);
-    [_scrollView setContentSize:newSize];
-    [self.view addSubview:_scrollView];
-}
-
-- (void)creatButton
-{
-    NSArray *discArray = [NSArray arrayWithObjects:@"工号： NS8766732",@"工号： NS8766732", @"工号： NS8766732",@"工号： NS8766732",@"工号： NS8766732",@"工号： NS8766732",@"工号： NS8766732",@"工号： NS8766732",@"工号： NS8766732",nil];
-    for (int i = 0; i < 9; i++) {
-        CGRect frame = CGRectMake((150*(i%2)+20), 188*(i/2), 140, 182);
-        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-        button.frame = frame;
-        [button setImage:[UIImage imageNamed:@"u80_normal.png"] forState:UIControlStateNormal];
-        
-        button.tag = i;
-        [button addTarget:self action:@selector(action:) forControlEvents:UIControlEventTouchUpInside];
-        [self.scrollView addSubview:button];
-        
-        CGRect labelFrame = CGRectMake(frame.origin.x+0, frame.origin.y+160, 140, 30);
-        UILabel *label = [[UILabel alloc] initWithFrame:labelFrame];
-        label.backgroundColor = [UIColor whiteColor];
-        label.font = [UIFont systemFontOfSize:14];
-        label.text = discArray[i];
-        label.textAlignment = NSTextAlignmentCenter;
-        [self.scrollView addSubview:label];
-    }
+    _discArray = [NSArray arrayWithObjects:@"工号： NS8766732",@"工号： NS8766732", @"工号： NS8766732",@"工号： NS8766732",@"工号： NS8766732",@"工号： NS8766732",@"工号： NS8766732",@"工号： NS8766732",@"工号： NS8766732",nil];
+    _tableView = [[UITableView alloc] init];
+    _tableView.frame = CGRectMake(0, 0, 320, 508);
+    _tableView.dataSource = self;
+    _tableView.delegate = self;
+    [self.view addSubview:_tableView];
 }
 
 - (void)action:(id)sender
@@ -74,13 +46,35 @@
     AboutWorkerViewController *aboutWorkerViewController = [[AboutWorkerViewController alloc] init];
     aboutWorkerViewController.title = @"技师介绍";
     [self.navigationController pushViewController:aboutWorkerViewController animated:YES];
-    
 }
 
-- (void)didReceiveMemoryWarning
+#pragma mark - Table view data source
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    return _discArray.count/2;
 }
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *atificerListCell = @"AtificerListCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:atificerListCell];
+    
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:atificerListCell];
+    }
+    
+    NSUInteger row = [indexPath row];
+    ArtificerListView *atificerListView = [[ArtificerListView alloc] initWithFrame:CGRectMake(0, 0, 320, 195) atRow:row andTarget:self andSelector:@selector(action:) andArray:_discArray];
+    [cell.contentView addSubview:atificerListView];
+    
+    return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 182.0;
+}
+
 
 @end

@@ -34,8 +34,7 @@
     for (int i = 0; i < 2; i++) {
         CGRect newFrame = CGRectMake(0, frame.origin.y + 80 *i, 300, 80);
         [self addBookResult:newFrame];
-    }
-    
+    }    
 }
 
 - (void)creatLabels

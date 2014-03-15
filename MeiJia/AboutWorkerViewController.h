@@ -8,15 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AboutWorkerViewController : UIViewController<UIScrollViewDelegate,UITableViewDataSource,UITableViewDelegate>
-
-@property (nonatomic,strong) UIScrollView *scrollView;
+@interface AboutWorkerViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
 
 @property (nonatomic,strong) UILabel *workYearlabel;
 @property (nonatomic,strong) UISegmentedControl *segmented;
 @property (nonatomic,strong) UITableView *tableView;
 @property (nonatomic,strong) UISegmentedControl *timeSegment;
-@property (nonatomic,strong) UILabel *label;
 @property (nonatomic,strong) NSArray *bookArray;
 
 @end

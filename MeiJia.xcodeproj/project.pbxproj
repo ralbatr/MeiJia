@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF10BC9218D402270020532D /* AppDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = DF10BC9018D402270020532D /* AppDelegate.h */; };
+		DF10BC9318D402270020532D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF10BC9118D402270020532D /* AppDelegate.m */; };
 		DF1403E018D2536B00FA82C7 /* AboutWorkerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1403DF18D2536B00FA82C7 /* AboutWorkerViewController.m */; };
 		DF1403E418D2672A00FA82C7 /* bookResultView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1403E318D2672A00FA82C7 /* bookResultView.m */; };
 		DF90B22E18D22F93005A3CE7 /* u24_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = DF90B22D18D22F93005A3CE7 /* u24_normal.png */; };
@@ -32,8 +34,6 @@
 		DFA594B318D2AACD0030EF99 /* MeiJiaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA594B218D2AACD0030EF99 /* MeiJiaTests.m */; };
 		DFA594BE18D2AB420030EF99 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA594BD18D2AB420030EF99 /* HomeViewController.m */; };
 		DFA594C118D2AB4E0030EF99 /* ServerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA594C018D2AB4E0030EF99 /* ServerViewController.m */; };
-		DFA594C418D2AC7E0030EF99 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA594C318D2AC7E0030EF99 /* MainViewController.m */; };
-		DFA8D49B18D227A600C7EBE0 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA8D49A18D227A600C7EBE0 /* FirstViewController.m */; };
 		DFA8D49E18D227B700C7EBE0 /* BookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA8D49D18D227B700C7EBE0 /* BookViewController.m */; };
 		DFAA26E618D2A2D100F728F2 /* ArtificerView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFAA26E518D2A2D100F728F2 /* ArtificerView.m */; };
 		DFDA2DE818D3E2E200BF2814 /* ServierView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFDA2DE718D3E2E200BF2814 /* ServierView.m */; };
@@ -53,6 +53,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DF10BC9018D402270020532D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = MeiJia/AppDelegate.h; sourceTree = "<group>"; };
+		DF10BC9118D402270020532D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = MeiJia/AppDelegate.m; sourceTree = "<group>"; };
 		DF1403DE18D2536B00FA82C7 /* AboutWorkerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutWorkerViewController.h; sourceTree = "<group>"; };
 		DF1403DF18D2536B00FA82C7 /* AboutWorkerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutWorkerViewController.m; sourceTree = "<group>"; };
 		DF1403E218D2672A00FA82C7 /* bookResultView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bookResultView.h; sourceTree = "<group>"; };
@@ -87,10 +89,6 @@
 		DFA594BD18D2AB420030EF99 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		DFA594BF18D2AB4E0030EF99 /* ServerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerViewController.h; sourceTree = "<group>"; };
 		DFA594C018D2AB4E0030EF99 /* ServerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerViewController.m; sourceTree = "<group>"; };
-		DFA594C218D2AC7E0030EF99 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		DFA594C318D2AC7E0030EF99 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		DFA8D49918D227A600C7EBE0 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FirstViewController.h; path = ../FirstViewController.h; sourceTree = "<group>"; };
-		DFA8D49A18D227A600C7EBE0 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirstViewController.m; path = ../FirstViewController.m; sourceTree = "<group>"; };
 		DFA8D49C18D227B700C7EBE0 /* BookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BookViewController.h; path = ../BookViewController.h; sourceTree = "<group>"; };
 		DFA8D49D18D227B700C7EBE0 /* BookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BookViewController.m; path = ../BookViewController.m; sourceTree = "<group>"; };
 		DFAA26E418D2A2D100F728F2 /* ArtificerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtificerView.h; sourceTree = "<group>"; };
@@ -157,6 +155,8 @@
 		DFA5948118D2AACD0030EF99 = {
 			isa = PBXGroup;
 			children = (
+				DF10BC9018D402270020532D /* AppDelegate.h */,
+				DF10BC9118D402270020532D /* AppDelegate.m */,
 				DFA5949318D2AACD0030EF99 /* MeiJia */,
 				DFA594AC18D2AACD0030EF99 /* MeiJiaTests */,
 				DFA5948C18D2AACD0030EF99 /* Frameworks */,
@@ -192,12 +192,8 @@
 				DFAA26A218D2A0AB00F728F2 /* 会员中心 */,
 				DF1403E118D2670400FA82C7 /* View */,
 				DF7517E818D3D98600C2947F /* 预约单 */,
-				DFA8D49918D227A600C7EBE0 /* FirstViewController.h */,
-				DFA8D49A18D227A600C7EBE0 /* FirstViewController.m */,
 				DFA5949F18D2AACD0030EF99 /* Images.xcassets */,
 				DFA5949418D2AACD0030EF99 /* Supporting Files */,
-				DFA594C218D2AC7E0030EF99 /* MainViewController.h */,
-				DFA594C318D2AC7E0030EF99 /* MainViewController.m */,
 			);
 			path = MeiJia;
 			sourceTree = "<group>";
@@ -375,18 +371,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFA8D49B18D227A600C7EBE0 /* FirstViewController.m in Sources */,
+				DF10BC9218D402270020532D /* AppDelegate.h in Sources */,
+				DF10BC9318D402270020532D /* AppDelegate.m in Sources */,
+				DFA5949A18D2AACD0030EF99 /* main.m in Sources */,
 				DF90B23718D234D8005A3CE7 /* AboutViewController.m in Sources */,
 				DFDA2DE818D3E2E200BF2814 /* ServierView.m in Sources */,
 				DFA8D49E18D227B700C7EBE0 /* BookViewController.m in Sources */,
-				DFA5949A18D2AACD0030EF99 /* main.m in Sources */,
 				DF1403E418D2672A00FA82C7 /* bookResultView.m in Sources */,
 				DFAA26E618D2A2D100F728F2 /* ArtificerView.m in Sources */,
 				DFA594BE18D2AB420030EF99 /* HomeViewController.m in Sources */,
 				DF1403E018D2536B00FA82C7 /* AboutWorkerViewController.m in Sources */,
 				DFDA2DEB18D3EAE400BF2814 /* ArtificerListView.m in Sources */,
 				DFDA2DEE18D3F20A00BF2814 /* ProductView.m in Sources */,
-				DFA594C418D2AC7E0030EF99 /* MainViewController.m in Sources */,
 				DFA594C118D2AB4E0030EF99 /* ServerViewController.m in Sources */,
 				DF90B24018D23B46005A3CE7 /* BookDetailViewController.m in Sources */,
 			);

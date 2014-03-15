@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HomeViewController : UIViewController <UIScrollViewDelegate,UITableViewDelegate,UITableViewDataSource>
+@interface HomeViewController : UIViewController <UITableViewDelegate,UITableViewDataSource>
 
-@property (nonatomic,strong) UIScrollView *scrollView;
+
 @property (nonatomic,strong) UITableView *tableView;
 @property (nonatomic,strong) NSArray *discArray;
 

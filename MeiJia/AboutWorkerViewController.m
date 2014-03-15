@@ -53,8 +53,15 @@
 
 - (void)creatView
 {
-//    ArtificerView *artificerView = [[ArtificerView alloc] initWithFrame:CGRectMake(5, 65, 70, 87) WithTarget:self andSelector:@selector(book) andHideWorkYear:YES];
-//    [self.view addSubview:artificerView];
+    ArtificerView *artificerView = [[ArtificerView alloc] initWithFrame:CGRectMake(5, 65, 70, 87) WithTarget:self andSelector:@selector(bookArtificer) andHideWorkYear:YES];
+    [self.view addSubview:artificerView];
+    
+    _workYearlabel = [[UILabel alloc] init];
+    _workYearlabel.frame = CGRectMake(190, 90, 200, 40);
+    _workYearlabel.text = @"工作年限：5年";
+    _workYearlabel.font = [UIFont systemFontOfSize:14];
+    [self.view addSubview:_workYearlabel];
+
 }
 
 - (void)creatUISegmentedControl
@@ -67,7 +74,7 @@
     [self.view addSubview:_segmented];
 }
 
-- (void)book
+- (void)bookArtificer
 {
     BookDetailViewController *bookDetailViewController = [[BookDetailViewController alloc] init];
     bookDetailViewController.title = @"技师介绍";

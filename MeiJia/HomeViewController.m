@@ -28,13 +28,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
     UIImageView *imageView = [[UIImageView alloc] init];
     imageView.frame = CGRectMake(0, 65, 320, 150);
     imageView.image = [UIImage imageNamed:@"u24_normal.png"];
     [self.view addSubview:imageView];
     
     [self creatTableView];
+//    [self creatScrollView];
 }
 
 - (void)creatTableView

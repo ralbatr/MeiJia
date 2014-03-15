@@ -10,6 +10,6 @@
 
 @interface ArtificerView : UIView
 
-- (id)initWithFrame:(CGRect)frame WithTarget:(id)target andSelector:(SEL)selector;// andHideWorkYear:(BOOL)workYear;
+- (id)initWithFrame:(CGRect)frame WithTarget:(id)target andSelector:(SEL)selector andHideWorkYear:(BOOL)workYear;
 
 @end

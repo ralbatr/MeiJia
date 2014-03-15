@@ -11,6 +11,6 @@
 @interface ServerViewController : UIViewController<UIScrollViewDelegate>
 
 @property (nonatomic,strong) UIScrollView *scrollView;
-
+@property (nonatomic,strong) UITableView *tableView;
 
 @end

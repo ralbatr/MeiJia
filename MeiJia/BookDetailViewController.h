@@ -9,12 +9,14 @@
 #import <UIKit/UIKit.h>
 @class TimePickerView;
 
-@interface BookDetailViewController : UIViewController <UITextFieldDelegate>
+@interface BookDetailViewController : UIViewController <UITextFieldDelegate,UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic,strong) UIButton *timeButton;
 @property (nonatomic,strong) TimePickerView *timePickerView;
 @property (nonatomic,strong) UITextField *nameTextField;
 @property (nonatomic,strong) NSString *timeString;
 @property (nonatomic,strong) UILabel *timeLabel;
+@property (nonatomic,strong) UITableView *tableView;
+@property (nonatomic,strong) NSArray *discArray;
 
 @end

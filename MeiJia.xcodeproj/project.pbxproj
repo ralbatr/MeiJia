@@ -10,7 +10,7 @@
 		DF10BC9218D402270020532D /* AppDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = DF10BC9018D402270020532D /* AppDelegate.h */; };
 		DF10BC9318D402270020532D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF10BC9118D402270020532D /* AppDelegate.m */; };
 		DF1403E018D2536B00FA82C7 /* AboutWorkerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1403DF18D2536B00FA82C7 /* AboutWorkerViewController.m */; };
-		DF1403E418D2672A00FA82C7 /* bookResultView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1403E318D2672A00FA82C7 /* bookResultView.m */; };
+		DF1403E418D2672A00FA82C7 /* BookResultView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1403E318D2672A00FA82C7 /* BookResultView.m */; };
 		DF90B22E18D22F93005A3CE7 /* u24_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = DF90B22D18D22F93005A3CE7 /* u24_normal.png */; };
 		DF90B23018D2301F005A3CE7 /* u29_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = DF90B22F18D2301F005A3CE7 /* u29_normal.png */; };
 		DF90B23218D23026005A3CE7 /* u31_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = DF90B23118D23026005A3CE7 /* u31_normal.png */; };
@@ -36,6 +36,7 @@
 		DFA594C118D2AB4E0030EF99 /* ServerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA594C018D2AB4E0030EF99 /* ServerViewController.m */; };
 		DFA8D49E18D227B700C7EBE0 /* BookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA8D49D18D227B700C7EBE0 /* BookViewController.m */; };
 		DFAA26E618D2A2D100F728F2 /* ArtificerView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFAA26E518D2A2D100F728F2 /* ArtificerView.m */; };
+		DFC45DE618D59AB500BB8FA4 /* DatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC45DE518D59AB500BB8FA4 /* DatePickerViewController.m */; };
 		DFC703C918D4384800A6CD00 /* TimePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC703C818D4384800A6CD00 /* TimePickerView.m */; };
 		DFDA2DE818D3E2E200BF2814 /* ServierView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFDA2DE718D3E2E200BF2814 /* ServierView.m */; };
 		DFDA2DEB18D3EAE400BF2814 /* ArtificerListView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFDA2DEA18D3EAE400BF2814 /* ArtificerListView.m */; };
@@ -58,8 +59,8 @@
 		DF10BC9118D402270020532D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = MeiJia/AppDelegate.m; sourceTree = "<group>"; };
 		DF1403DE18D2536B00FA82C7 /* AboutWorkerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutWorkerViewController.h; sourceTree = "<group>"; };
 		DF1403DF18D2536B00FA82C7 /* AboutWorkerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutWorkerViewController.m; sourceTree = "<group>"; };
-		DF1403E218D2672A00FA82C7 /* bookResultView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bookResultView.h; sourceTree = "<group>"; };
-		DF1403E318D2672A00FA82C7 /* bookResultView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bookResultView.m; sourceTree = "<group>"; };
+		DF1403E218D2672A00FA82C7 /* BookResultView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookResultView.h; sourceTree = "<group>"; };
+		DF1403E318D2672A00FA82C7 /* BookResultView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookResultView.m; sourceTree = "<group>"; };
 		DF90B22D18D22F93005A3CE7 /* u24_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = u24_normal.png; sourceTree = "<group>"; };
 		DF90B22F18D2301F005A3CE7 /* u29_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = u29_normal.png; sourceTree = "<group>"; };
 		DF90B23118D23026005A3CE7 /* u31_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = u31_normal.png; sourceTree = "<group>"; };
@@ -94,6 +95,8 @@
 		DFA8D49D18D227B700C7EBE0 /* BookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BookViewController.m; path = ../BookViewController.m; sourceTree = "<group>"; };
 		DFAA26E418D2A2D100F728F2 /* ArtificerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtificerView.h; sourceTree = "<group>"; };
 		DFAA26E518D2A2D100F728F2 /* ArtificerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtificerView.m; sourceTree = "<group>"; };
+		DFC45DE418D59AB500BB8FA4 /* DatePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatePickerViewController.h; sourceTree = "<group>"; };
+		DFC45DE518D59AB500BB8FA4 /* DatePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatePickerViewController.m; sourceTree = "<group>"; };
 		DFC703C718D4384800A6CD00 /* TimePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimePickerView.h; sourceTree = "<group>"; };
 		DFC703C818D4384800A6CD00 /* TimePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimePickerView.m; sourceTree = "<group>"; };
 		DFDA2DE618D3E2E200BF2814 /* ServierView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServierView.h; sourceTree = "<group>"; };
@@ -132,8 +135,8 @@
 		DF1403E118D2670400FA82C7 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				DF1403E218D2672A00FA82C7 /* bookResultView.h */,
-				DF1403E318D2672A00FA82C7 /* bookResultView.m */,
+				DF1403E218D2672A00FA82C7 /* BookResultView.h */,
+				DF1403E318D2672A00FA82C7 /* BookResultView.m */,
 				DFAA26E418D2A2D100F728F2 /* ArtificerView.h */,
 				DFAA26E518D2A2D100F728F2 /* ArtificerView.m */,
 				DFDA2DE918D3EAE400BF2814 /* ArtificerListView.h */,
@@ -153,6 +156,8 @@
 			children = (
 				DF90B23E18D23B46005A3CE7 /* BookDetailViewController.h */,
 				DF90B23F18D23B46005A3CE7 /* BookDetailViewController.m */,
+				DFC45DE418D59AB500BB8FA4 /* DatePickerViewController.h */,
+				DFC45DE518D59AB500BB8FA4 /* DatePickerViewController.m */,
 			);
 			name = "预约单";
 			sourceTree = "<group>";
@@ -376,6 +381,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFC45DE618D59AB500BB8FA4 /* DatePickerViewController.m in Sources */,
 				DFC703C918D4384800A6CD00 /* TimePickerView.m in Sources */,
 				DF10BC9218D402270020532D /* AppDelegate.h in Sources */,
 				DF10BC9318D402270020532D /* AppDelegate.m in Sources */,
@@ -383,7 +389,7 @@
 				DF90B23718D234D8005A3CE7 /* AboutViewController.m in Sources */,
 				DFDA2DE818D3E2E200BF2814 /* ServierView.m in Sources */,
 				DFA8D49E18D227B700C7EBE0 /* BookViewController.m in Sources */,
-				DF1403E418D2672A00FA82C7 /* bookResultView.m in Sources */,
+				DF1403E418D2672A00FA82C7 /* BookResultView.m in Sources */,
 				DFAA26E618D2A2D100F728F2 /* ArtificerView.m in Sources */,
 				DFA594BE18D2AB420030EF99 /* HomeViewController.m in Sources */,
 				DF1403E018D2536B00FA82C7 /* AboutWorkerViewController.m in Sources */,

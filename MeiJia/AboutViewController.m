@@ -69,7 +69,7 @@
     UIPageControl *pageControl = [[UIPageControl alloc] init];
     pageControl.center = CGPointMake(320 * 0.5, kImageHeigh - 20);
     pageControl.bounds = CGRectMake(0, 0, 320, kImageHeigh);
-    pageControl.numberOfPages = kImageCount; // 一共显示多少个圆点（多少页）
+    pageControl.numberOfPages = kImageCount; // 一共显示多少个圆点
     // 设置非选中页的圆点颜色
     pageControl.pageIndicatorTintColor = [UIColor whiteColor];
     // 设置选中页的圆点颜色

@@ -25,10 +25,11 @@
     datePicker.center = CGPointMake(160, 160);
     datePicker.datePickerMode = UIDatePickerModeDateAndTime;
     datePicker.backgroundColor = [UIColor whiteColor];
+    datePicker.tag = 102;
     [self addSubview:datePicker];
     
     UIButton *timeButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    timeButton.frame = CGRectMake(150, datePicker.frame.size.height + 40, 60, 30);
+    timeButton.frame = CGRectMake(160, datePicker.frame.size.height + 40, 60, 30);
     [timeButton addTarget:target action:selector forControlEvents:UIControlEventTouchUpInside];
     [timeButton setTitle:@"确 定" forState:UIControlStateNormal];
     [self addSubview:timeButton];

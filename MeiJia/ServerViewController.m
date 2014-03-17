@@ -29,12 +29,7 @@
     [super viewDidLoad];
     [self creatLabels];
     [self creatButtons];
-    [self creatScrollView];
-    CGRect frame = CGRectMake(0, 0, 300, 80);
-    for (int i = 0; i < 2; i++) {
-        CGRect newFrame = CGRectMake(0, frame.origin.y + 80 *i, 300, 80);
-        [self addBookResult:newFrame];
-    }    
+    [self creatTableView];
 }
 
 - (void)creatLabels
@@ -60,31 +55,44 @@
     [self.view addSubview:secretChangeButton];
 }
 
-- (void)creatScrollView
+- (void)creatTableView
 {
-    _scrollView = [[UIScrollView alloc] init];
-    _scrollView.frame = CGRectMake(10, 130, 300, 380);
-//    _scrollView.backgroundColor = [UIColor redColor];
-    _scrollView.pagingEnabled = YES;
-    _scrollView.showsHorizontalScrollIndicator = YES;
-    _scrollView.showsVerticalScrollIndicator = NO;
-    _scrollView.delegate = self;
-    CGSize newSize = CGSizeMake(300, self.view.frame.size.height*2);
-    [_scrollView setContentSize:newSize];
-    [self.view addSubview:_scrollView];
+    _tableView = [[UITableView alloc] init];
+    _tableView.frame = CGRectMake(10, 120, 300, 300);
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    [self.view addSubview:_tableView];
 }
 
-- (void)addBookResult:(CGRect)frame
+#pragma mark - Table view data source
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    bookResultView *book = [[bookResultView alloc]initWithFrame:frame];
-//    book.frame = frame;
-    [_scrollView addSubview:book];
+    return 2;
 }
 
-- (void)didReceiveMemoryWarning
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    static NSString *ServierCell = @"ServierCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ServierCell];
+    
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ServierCell];
+    }
+//    NSUInteger row = [indexPath row];
+    bookResultView *book = [[bookResultView alloc]initWithFrame:CGRectMake(0, 0 , 300, 80)];
+    [cell.contentView addSubview:book];
+    
+    return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 98.0;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    return @"我的预约";
 }
 
 @end

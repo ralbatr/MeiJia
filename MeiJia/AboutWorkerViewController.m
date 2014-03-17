@@ -55,11 +55,11 @@
 - (void)creatView
 {
     //技师个人介绍
-    ArtificerView *artificerView = [[ArtificerView alloc] initWithFrame:CGRectMake(5, 65, 70, 87) WithTarget:self andSelector:@selector(bookArtificer) andHideWorkYear:YES];
+    ArtificerView *artificerView = [[ArtificerView alloc] initWithFrame:CGRectMake(5, 65, 300, 100) WithTarget:self andSelector:@selector(bookArtificer) andHideWorkYear:YES];
     [self.view addSubview:artificerView];
     
     _workYearlabel = [[UILabel alloc] init];
-    _workYearlabel.frame = CGRectMake(190, 90, 200, 40);
+    _workYearlabel.frame = CGRectMake(190, 90, 200, 30);
     _workYearlabel.text = @"工作年限：5年";
     _workYearlabel.font = [UIFont systemFontOfSize:14];
     [self.view addSubview:_workYearlabel];

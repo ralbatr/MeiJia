@@ -10,13 +10,13 @@
 
 @implementation BookResultView
 
-- (id)initWithFrame:(CGRect)frame andTarget:(id)target andSEL:(SEL)selector andTitle:(NSString *)title
+- (id)initWithFrame:(CGRect)frame andTarget:(id)target andSEL:(SEL)selector andTitle:(NSString *)title andTag:(NSInteger)row
 {
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
         [self creatLabel];
-        [self creatButtonWithTarget:(id)target andSEL:(SEL)selector andTitle:(NSString *)title];
+        [self creatButtonWithTarget:(id)target andSEL:(SEL)selector andTitle:(NSString *)title andTag:row];
     }
     return self;
 }
@@ -33,11 +33,12 @@
     [self addSubview:serverLabel];
 }
 
-- (void)creatButtonWithTarget:(id)target andSEL:(SEL)selector andTitle:(NSString *)title
+- (void)creatButtonWithTarget:(id)target andSEL:(SEL)selector andTitle:(NSString *)title andTag:(NSInteger)row
 {
     UIButton *bookButton = [UIButton buttonWithType:UIButtonTypeSystem];
     bookButton.frame = CGRectMake(110, 75, 100, 30);
-    bookButton.backgroundColor = [UIColor grayColor];
+//    bookButton.backgroundColor = [UIColor grayColor];
+    bookButton.tag = row;
     [bookButton setTitle:title forState:UIControlStateNormal];
     [bookButton addTarget:target action:selector forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:bookButton];

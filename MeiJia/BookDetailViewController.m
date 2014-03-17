@@ -160,7 +160,7 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ServierCell];
     }
     NSUInteger row = [indexPath row];
-    ServierView *servierView = [[ServierView alloc] initWithFrame:CGRectMake(0, 0, 320, 94) withRow:row andTarget:self andSelector:@selector(action:) andArray:_discArray];
+    ServierView *servierView = [[ServierView alloc] initWithFrame:CGRectMake(0, 0, 320, 94) withRow:row andTarget:self andSelector:nil andArray:_discArray];
     [cell.contentView addSubview:servierView];
     
     return cell;

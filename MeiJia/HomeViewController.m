@@ -32,6 +32,9 @@
     [self creatTableView];
     
     _discArray = [NSArray arrayWithObjects:@"服务项目1",@"服务项目2", @"服务项目3",@"服务项目4",@"服务项目5",@"服务项目6",@"服务项目7",@"服务项目8",@"服务项目9",@"服务项目10",@"服务项目11",@"服务项目12",nil];
+    //设置 navigationItem 的名称
+    UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithTitle:@" " style:UIBarButtonItemStyleBordered target:nil action:nil];
+    [self.navigationItem setBackBarButtonItem:backItem];
 }
 
 - (void)creatImageView

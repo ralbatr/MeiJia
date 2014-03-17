@@ -10,6 +10,6 @@
 
 @interface BookResultView : UIView
 
-- (id)initWithFrame:(CGRect)frame andTarget:(id)target andSEL:(SEL)selector andTitle:(NSString *)title;
+- (id)initWithFrame:(CGRect)frame andTarget:(id)target andSEL:(SEL)selector andTitle:(NSString *)title andTag:(NSInteger)row;
 
 @end

@@ -7,9 +7,9 @@
 //
 
 #import "BookDetailViewController.h"
-#import "TimePickerView.h"
 #import "DatePickerViewController.h"
 #import "ServierView.h"
+#import "ComboxView.h"
 
 #define kOrderNumber 2
 
@@ -36,8 +36,7 @@
     [self creatLabel];
     [self creatTextField];
     _discArray = [NSArray arrayWithObjects:@"服务项目1",@"服务项目2", @"服务项目3",@"服务项目4",@"服务项目5",@"服务项目6",nil];
-    [self creatTableView];
-    
+    [self creatTableView];  
 }
 
 - (void)creatLabel
@@ -66,13 +65,6 @@
     bookTimelabel.font = [UIFont systemFontOfSize:12];
     [self.view addSubview:bookTimelabel];
     
-    UILabel *timelabel = [[UILabel alloc] init];
-    timelabel.frame = CGRectMake(75, 155, 120, 30);
-    timelabel.text = @"尚未选择时间";
-    timelabel.tag = 101;
-    timelabel.font = [UIFont systemFontOfSize:12];
-    [self.view addSubview:timelabel];
-    
     UILabel *bookServerlabel = [[UILabel alloc] init];
     bookServerlabel.frame = CGRectMake(15, 185, 120, 30);
     bookServerlabel.text = @"预约服务：";
@@ -89,35 +81,13 @@
     [self.view addSubview:_tableView];
 }
 
-- (void)creatDatepacker
-{
-    _timePickerView = [[TimePickerView alloc] initWithFrame:CGRectMake(0, 40, 320, 450) WithTarget:self andSelector:@selector(action:)];
-    _timePickerView.backgroundColor = [UIColor whiteColor];
-    _timePickerView.tag = 105;
-    [self.view addSubview:_timePickerView];    
-}
-
-- (void)action:(id)sender
-{
-    UIButton *timePickerButton = (UIButton *)[self.view viewWithTag:103];
-    [timePickerButton setTitle:@"重新选择" forState:UIControlStateNormal];
-    UIView *timeView = (UIView *)[self.view viewWithTag:105];
-    
-    UILabel *timeLabel = (UILabel *)[self.view viewWithTag:101];
-    UIDatePicker *timePicker = (UIDatePicker *)[self.view viewWithTag:102];
-    timeLabel.text = [self dateFormate:timePicker.date];
-
-    
-    [timeView removeFromSuperview];
-}
-
 - (NSString *)dateFormate:(NSDate *)date
 {
     NSDateFormatter *dateFormat = [ [NSDateFormatter alloc] init];
     NSTimeZone *timeZone = [NSTimeZone timeZoneForSecondsFromGMT:3600*8];
     [dateFormat setDateFormat:@"YYYY-MM-DDThh:mm:ss.sTZD"];
     [dateFormat setTimeZone:timeZone];
-    [dateFormat setDateFormat:@"MMMMdd日a hh:mm"];
+    [dateFormat setDateFormat:@"MMMMdd日"];
     NSString *newDateStr = [dateFormat stringFromDate:date];
     return newDateStr;
 }
@@ -125,17 +95,41 @@
 - (void)creatTextField
 {
     _nameTextField = [[UITextField alloc] init];
-    _nameTextField.frame = CGRectMake(90, 125, 220, 25);
+    _nameTextField.frame = CGRectMake(90, 130, 220, 25);
     _nameTextField.placeholder = @"请输入姓名";
+    _nameTextField.font = [UIFont systemFontOfSize:14.0f];
     _nameTextField.delegate = self;
     [self.view addSubview:_nameTextField];
     
-    _timeButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    _timeButton.frame = CGRectMake(200, 155, 60, 30);
-    [_timeButton addTarget:self action:@selector(creatDatepacker) forControlEvents:UIControlEventTouchUpInside];
-    _timeButton.tag = 103;
-    [_timeButton setTitle:@"选取时间" forState:UIControlStateNormal];
-    [self.view addSubview:_timeButton];
+    [self creatCombox];
+}
+
+- (void)creatCombox
+{
+    NSMutableArray *dayArray = [NSMutableArray arrayWithObjects:@"明天",@"后天",nil];
+    for (int i = 0; i < 5; i++) {
+        NSDate *date = [NSDate dateWithTimeIntervalSinceNow:60*60*24*(3 + i)];
+        NSString *dayStr = [self dateFormate:date];
+        [dayArray addObject:dayStr];
+    }
+    
+    ComboxView *day = [[ComboxView alloc] initWithFrame:CGRectMake(75, 160, 90, 30)];
+    day.textField.text = @"今天";
+    
+    day.tableArray = dayArray;
+    [self.view addSubview:day];
+    
+    ComboxView *hour = [[ComboxView alloc] initWithFrame:CGRectMake(165, 160, 70, 30)];
+    hour.textField.text = @"8时";
+    NSArray *hourArray=[[NSArray alloc]initWithObjects:@"9时",@"10时",@"11时",@"12时",@"13时",@"14时",@"15时",@"16时",@"17时",nil];
+    hour.tableArray = hourArray;
+    [self.view addSubview:hour];
+    
+    ComboxView *minute = [[ComboxView alloc] initWithFrame:CGRectMake(235, 160, 80, 30)];
+    minute.textField.text = @"00分";
+    NSArray *minuteArray=[[NSArray alloc]initWithObjects:@"05分",@"10分",@"15分",@"20分",@"25分",@"30分",@"35分",@"40分",@"45分",@"50分",@"55分",nil];
+    minute.tableArray = minuteArray;
+    [self.view addSubview:minute];
 }
 
 #pragma mark -TextField delegate

@@ -37,6 +37,7 @@
 		DFA8D49E18D227B700C7EBE0 /* BookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA8D49D18D227B700C7EBE0 /* BookViewController.m */; };
 		DFAA26E618D2A2D100F728F2 /* ArtificerView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFAA26E518D2A2D100F728F2 /* ArtificerView.m */; };
 		DFC703C918D4384800A6CD00 /* TimePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC703C818D4384800A6CD00 /* TimePickerView.m */; };
+		DFD7D3B518D6E22800B3E45F /* ComboxView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD7D3B418D6E22800B3E45F /* ComboxView.m */; };
 		DFDA2DE818D3E2E200BF2814 /* ServierView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFDA2DE718D3E2E200BF2814 /* ServierView.m */; };
 		DFDA2DEB18D3EAE400BF2814 /* ArtificerListView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFDA2DEA18D3EAE400BF2814 /* ArtificerListView.m */; };
 		DFDA2DEE18D3F20A00BF2814 /* ProductView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFDA2DED18D3F20A00BF2814 /* ProductView.m */; };
@@ -96,6 +97,8 @@
 		DFAA26E518D2A2D100F728F2 /* ArtificerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtificerView.m; sourceTree = "<group>"; };
 		DFC703C718D4384800A6CD00 /* TimePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimePickerView.h; sourceTree = "<group>"; };
 		DFC703C818D4384800A6CD00 /* TimePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimePickerView.m; sourceTree = "<group>"; };
+		DFD7D3B318D6E22800B3E45F /* ComboxView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComboxView.h; sourceTree = "<group>"; };
+		DFD7D3B418D6E22800B3E45F /* ComboxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComboxView.m; sourceTree = "<group>"; };
 		DFDA2DE618D3E2E200BF2814 /* ServierView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServierView.h; sourceTree = "<group>"; };
 		DFDA2DE718D3E2E200BF2814 /* ServierView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServierView.m; sourceTree = "<group>"; };
 		DFDA2DE918D3EAE400BF2814 /* ArtificerListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtificerListView.h; sourceTree = "<group>"; };
@@ -132,6 +135,8 @@
 		DF1403E118D2670400FA82C7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DFD7D3B318D6E22800B3E45F /* ComboxView.h */,
+				DFD7D3B418D6E22800B3E45F /* ComboxView.m */,
 				DF1403E218D2672A00FA82C7 /* BookResultView.h */,
 				DF1403E318D2672A00FA82C7 /* BookResultView.m */,
 				DFAA26E418D2A2D100F728F2 /* ArtificerView.h */,
@@ -386,6 +391,7 @@
 				DF1403E418D2672A00FA82C7 /* BookResultView.m in Sources */,
 				DFAA26E618D2A2D100F728F2 /* ArtificerView.m in Sources */,
 				DFA594BE18D2AB420030EF99 /* HomeViewController.m in Sources */,
+				DFD7D3B518D6E22800B3E45F /* ComboxView.m in Sources */,
 				DF1403E018D2536B00FA82C7 /* AboutWorkerViewController.m in Sources */,
 				DFDA2DEB18D3EAE400BF2814 /* ArtificerListView.m in Sources */,
 				DFDA2DEE18D3F20A00BF2814 /* ProductView.m in Sources */,

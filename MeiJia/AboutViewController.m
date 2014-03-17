@@ -65,6 +65,11 @@
     [_scrollView setContentSize:newSize];
     [self.view addSubview:_scrollView];
     //图片滚动的小点
+    [self creatPageControl];
+}
+#pragma mark -图片滚动的小点
+- (void)creatPageControl
+{
     // 添加PageControl
     UIPageControl *pageControl = [[UIPageControl alloc] init];
     pageControl.center = CGPointMake(320 * 0.5, kImageHeigh - 20);
@@ -79,11 +84,6 @@
     [self.view addSubview:pageControl];
     _pageControl = pageControl;
 }
-#pragma mark -图片滚动的小点
-//- (void)creatPageControl
-//{
-//    
-//}
 
 #pragma mark - UIScrollView的代理方法
 #pragma mark 当scrollView正在滚动的时候调用

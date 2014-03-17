@@ -117,7 +117,7 @@
     NSTimeZone *timeZone = [NSTimeZone timeZoneForSecondsFromGMT:3600*8];
     [dateFormat setDateFormat:@"YYYY-MM-DDThh:mm:ss.sTZD"];
     [dateFormat setTimeZone:timeZone];
-    [dateFormat setDateFormat:@"MMMM dd, hh:mm a"];
+    [dateFormat setDateFormat:@"MMMMdd日a hh:mm"];
     NSString *newDateStr = [dateFormat stringFromDate:date];
     return newDateStr;
 }

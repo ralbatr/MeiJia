@@ -26,6 +26,8 @@
     datePicker.datePickerMode = UIDatePickerModeDateAndTime;
     datePicker.backgroundColor = [UIColor whiteColor];
     datePicker.tag = 102;
+    // 设置 当前时间为最小时间
+    datePicker.minimumDate = [NSDate dateWithTimeIntervalSinceNow:0];
     [self addSubview:datePicker];
     
     UIButton *timeButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];

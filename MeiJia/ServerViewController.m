@@ -7,7 +7,7 @@
 //
 
 #import "ServerViewController.h"
-#import "bookResultView.h"
+#import "BookResultView.h"
 
 @interface ServerViewController ()
 
@@ -79,15 +79,20 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ServierCell];
     }
 //    NSUInteger row = [indexPath row];
-    bookResultView *book = [[bookResultView alloc]initWithFrame:CGRectMake(0, 0 , 300, 80)];
+    BookResultView *book = [[BookResultView alloc]initWithFrame:CGRectMake(0, 0 , 300, 120) andTarget:self andSEL:@selector(bookButtonAction:) andTitle:@"取消"];
     [cell.contentView addSubview:book];
     
     return cell;
 }
 
+- (void)bookButtonAction:(id)sender
+{
+    NSLog(@"bookButtonAction");
+}
+
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 98.0;
+    return 120.0;
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section

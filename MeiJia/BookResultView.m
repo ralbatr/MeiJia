@@ -6,16 +6,17 @@
 //  Copyright (c) 2014年 Ralbatr. All rights reserved.
 //
 
-#import "bookResultView.h"
+#import "BookResultView.h"
 
-@implementation bookResultView
+@implementation BookResultView
 
-- (id)initWithFrame:(CGRect)frame
+- (id)initWithFrame:(CGRect)frame andTarget:(id)target andSEL:(SEL)selector andTitle:(NSString *)title
 {
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
         [self creatLabel];
+        [self creatButtonWithTarget:(id)target andSEL:(SEL)selector andTitle:(NSString *)title];
     }
     return self;
 }
@@ -23,13 +24,23 @@
 - (void)creatLabel
 {
     UILabel *timeLabel = [[UILabel alloc] init];
-    timeLabel.frame = CGRectMake(5, 5, 300, 40);
+    timeLabel.frame = CGRectMake(5, 5, 300, 30);
     timeLabel.text = @"2月28日  9:40 -- 11:40";
     [self addSubview:timeLabel];
     UILabel *serverLabel = [[UILabel alloc] init];
-    serverLabel.frame = CGRectMake(5, 45, 300, 40);
+    serverLabel.frame = CGRectMake(5, 40, 300, 30);
     serverLabel.text = @"服务内容：icure修手，Padicure修脚";
     [self addSubview:serverLabel];
+}
+
+- (void)creatButtonWithTarget:(id)target andSEL:(SEL)selector andTitle:(NSString *)title
+{
+    UIButton *bookButton = [UIButton buttonWithType:UIButtonTypeSystem];
+    bookButton.frame = CGRectMake(110, 75, 100, 30);
+    bookButton.backgroundColor = [UIColor grayColor];
+    [bookButton setTitle:title forState:UIControlStateNormal];
+    [bookButton addTarget:target action:selector forControlEvents:UIControlEventTouchUpInside];
+    [self addSubview:bookButton];
 }
 
 @end

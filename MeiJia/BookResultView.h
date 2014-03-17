@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface bookResultView : UIView
+@interface BookResultView : UIView
+
+- (id)initWithFrame:(CGRect)frame andTarget:(id)target andSEL:(SEL)selector andTitle:(NSString *)title;
 
 @end

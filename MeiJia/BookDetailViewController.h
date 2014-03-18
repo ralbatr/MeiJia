@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 @class TimePickerView;
+@class ComboxView;
 
 @interface BookDetailViewController : UIViewController <UITextFieldDelegate,UITableViewDelegate,UITableViewDataSource>
 
@@ -18,5 +19,8 @@
 @property (nonatomic,strong) UILabel *timeLabel;
 @property (nonatomic,strong) UITableView *tableView;
 @property (nonatomic,strong) NSArray *discArray;
+@property (nonatomic,strong) ComboxView *day;
+@property (nonatomic,strong) ComboxView *hour;
+@property (nonatomic,strong) ComboxView *minute;
 
 @end

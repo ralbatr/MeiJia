@@ -20,4 +20,6 @@
 @property (nonatomic,retain) NSArray *tableArray;//下拉列表数据
 @property (nonatomic,retain) UITextField *textField;//文本输入框
 
+- (void)closeTableView;
+
 @end

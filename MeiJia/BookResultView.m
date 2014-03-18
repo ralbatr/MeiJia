@@ -14,7 +14,6 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        // Initialization code
         [self creatLabel];
         [self creatButtonWithTarget:(id)target andSEL:(SEL)selector andTitle:(NSString *)title andTag:row];
     }

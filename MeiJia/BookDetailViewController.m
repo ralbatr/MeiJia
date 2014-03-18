@@ -32,11 +32,12 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    [self creatCloseButton];
     //add label
     [self creatLabel];
     [self creatTextField];
     _discArray = [NSArray arrayWithObjects:@"服务项目1",@"服务项目2", @"服务项目3",@"服务项目4",@"服务项目5",@"服务项目6",nil];
-    [self creatTableView];  
+    [self creatTableView];
 }
 
 - (void)creatLabel
@@ -72,6 +73,15 @@
     [self.view addSubview:bookServerlabel];
 }
 
+- (void)creatCloseButton
+{
+    UIButton *closeButton = [[UIButton alloc] init];
+    closeButton.frame = CGRectMake(0, 0, 320, 200);
+    closeButton.backgroundColor = [UIColor grayColor];
+    [closeButton addTarget:self action:@selector(closeKeyboardAndTableView:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:closeButton];
+}
+
 - (void)creatTableView
 {
     _tableView = [[UITableView alloc] init];
@@ -95,41 +105,51 @@
 - (void)creatTextField
 {
     _nameTextField = [[UITextField alloc] init];
-    _nameTextField.frame = CGRectMake(90, 130, 220, 25);
+    _nameTextField.frame = CGRectMake(90, 130, 120, 25);
+    _nameTextField.backgroundColor = [UIColor greenColor];
     _nameTextField.placeholder = @"请输入姓名";
     _nameTextField.font = [UIFont systemFontOfSize:14.0f];
     _nameTextField.delegate = self;
     [self.view addSubview:_nameTextField];
-    
+    //添加 事件选择的下拉的
     [self creatCombox];
 }
 
 - (void)creatCombox
 {
-    NSMutableArray *dayArray = [NSMutableArray arrayWithObjects:@"明天",@"后天",nil];
+    NSMutableArray *dayArray = [NSMutableArray arrayWithObjects:@"今天",@"明天",@"后天",nil];
     for (int i = 0; i < 5; i++) {
         NSDate *date = [NSDate dateWithTimeIntervalSinceNow:60*60*24*(3 + i)];
         NSString *dayStr = [self dateFormate:date];
         [dayArray addObject:dayStr];
     }
     
-    ComboxView *day = [[ComboxView alloc] initWithFrame:CGRectMake(75, 160, 90, 30)];
-    day.textField.text = @"今天";
+    self.day = [[ComboxView alloc] initWithFrame:CGRectMake(75, 160, 90, 30)];
+    self.day.textField.text = @"今天";
     
-    day.tableArray = dayArray;
-    [self.view addSubview:day];
+    self.day.tableArray = dayArray;
+    [self.view addSubview:self.day];
     
-    ComboxView *hour = [[ComboxView alloc] initWithFrame:CGRectMake(165, 160, 70, 30)];
-    hour.textField.text = @"8时";
-    NSArray *hourArray=[[NSArray alloc]initWithObjects:@"9时",@"10时",@"11时",@"12时",@"13时",@"14时",@"15时",@"16时",@"17时",nil];
-    hour.tableArray = hourArray;
-    [self.view addSubview:hour];
+    self.hour = [[ComboxView alloc] initWithFrame:CGRectMake(165, 160, 70, 30)];
+    self.hour.textField.text = @"8时";
+    NSArray *hourArray=[[NSArray alloc]initWithObjects:@"8时",@"9时",@"10时",@"11时",@"12时",@"13时",@"14时",@"15时",@"16时",@"17时",nil];
+    self.hour.tableArray = hourArray;
+    [self.view addSubview:self.hour];
     
-    ComboxView *minute = [[ComboxView alloc] initWithFrame:CGRectMake(235, 160, 80, 30)];
-    minute.textField.text = @"00分";
-    NSArray *minuteArray=[[NSArray alloc]initWithObjects:@"05分",@"10分",@"15分",@"20分",@"25分",@"30分",@"35分",@"40分",@"45分",@"50分",@"55分",nil];
-    minute.tableArray = minuteArray;
-    [self.view addSubview:minute];
+    self.minute = [[ComboxView alloc] initWithFrame:CGRectMake(235, 160, 80, 30)];
+    self.minute.textField.text = @"00分";
+    NSArray *minuteArray=[[NSArray alloc]initWithObjects:@"00分",@"05分",@"10分",@"15分",@"20分",@"25分",@"30分",@"35分",@"40分",@"45分",@"50分",@"55分",nil];
+    self.minute.tableArray = minuteArray;
+    [self.view addSubview:self.minute];
+}
+
+//关闭键盘和combox下拉的
+- (void)closeKeyboardAndTableView:(id)sender
+{
+    [[[UIApplication sharedApplication] keyWindow] endEditing:YES];
+    [self.day closeTableView];
+    [self.hour closeTableView];
+    [self.minute closeTableView];
 }
 
 #pragma mark -TextField delegate
@@ -168,6 +188,11 @@
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
     return @"Man Nails 美甲";
+}
+//当再次 出现视图时，重新创建combox那些下拉框。
+- (void)viewDidAppear:(BOOL)animated
+{
+    [self creatCombox];
 }
 
 @end

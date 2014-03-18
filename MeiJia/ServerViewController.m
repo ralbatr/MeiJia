@@ -80,6 +80,7 @@
     }
     NSUInteger row = [indexPath row];
     BookResultView *book = [[BookResultView alloc]initWithFrame:CGRectMake(0, 0 , 300, 120) andTarget:self andSEL:@selector(bookButtonAction:) andTitle:@"取消" andTag:row];
+//    book.backgroundColor = [UIColor greenColor];
     [cell.contentView addSubview:book];
     
     return cell;

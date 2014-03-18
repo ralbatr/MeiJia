@@ -12,50 +12,77 @@
 
 -(id)initWithFrame:(CGRect)frame
 {
-    if (frame.size.height<200) {
+    if (frame.size.height < 200)
+    {
         frameHeight = 200;
     }
-    else {
+    else
+    {
         frameHeight = frame.size.height;
     }
     tabheight = frameHeight - 30;
-    
     frame.size.height = 30.0f;
-    
     self = [super initWithFrame:frame];
     
 //    self.dropTableView.hidden = YES;
     
     if(self){
         showList = NO; //默认不显示下拉框
-        
-        _dropTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 20, frame.size.width, 0)];
-        _dropTableView.delegate = self;
-        _dropTableView.dataSource = self;
-//        _dropTableView.backgroundColor = [UIColor grayColor];
-//        _dropTableView.separatorColor = [UIColor lightGrayColor];
-        _dropTableView.hidden = YES;
-        [self addSubview:_dropTableView];
-        //隐藏 TableView的多余的 白线
-        [self setExtraCellLineHidden:_dropTableView];
-        
+        [self creatTableView:frame];
         _textField = [[UITextField alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, 20)];
         _textField.borderStyle=UITextBorderStyleRoundedRect;//设置文本框的边框风格
         _textField.inputView=[[UIView alloc]initWithFrame:CGRectZero];
+        _textField.delegate = self;
         _textField.font = [UIFont systemFontOfSize:14.0f];
-        [_textField addTarget:self action:@selector(dropdown) forControlEvents:UIControlEventAllTouchEvents];
+//        [_textField addTarget:self action:@selector(closeTableView) forControlEvents:UIControlEventAllTouchEvents];
         [self addSubview:_textField];
     }
     return self;
 }
--(void)dropdown{
 
-//    if (showList) {//如果下拉框已显示，什么都不做
-//        return;
-//    }else {//如果下拉框尚未显示，则进行显示
+- (void)closeTableView
+{
+    //如果没有在选择状态
+//    if ([self respondsToSelector:@selector(textFieldShouldBeginEditing:)]) {
+//        NSLog(@"不是在选择状态");
+//        [self.dropTableView removeFromSuperview];
+//    }else{
+//          //在选择状态
+    if (showList) {
+        self.hidden = YES;
+        NSLog(@"在选择状态");
+    }
+//    }
+}
+
+- (void)creatTableView:(CGRect)frame
+{
+    _dropTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 20, frame.size.width, 0)];
+    _dropTableView.delegate = self;
+    _dropTableView.dataSource = self;
+    _dropTableView.hidden = YES;
+//    [self addSubview:_dropTableView];
+    //隐藏 TableView的多余的 白线
+    [self setExtraCellLineHidden:_dropTableView];
+}
+
+- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField
+{
+    [self dropdown];
+    return NO;
+}
+
+-(void)dropdown
+{
+
+    if (showList) {//如果下拉框已显示，什么都不做
+        return;
+    }else {//如果下拉框尚未显示，则进行显示
     
         CGRect sf = self.frame;
         sf.size.height = frameHeight;
+        // 添加下拉菜单
+        [self addSubview:_dropTableView];
         
         //把dropdownList放到前面，防止下拉框被别的控件遮住
         [self.superview bringSubviewToFront:self];
@@ -71,7 +98,7 @@
         self.frame = sf;
         _dropTableView.frame = frame;
         [UIView commitAnimations];
-//    }
+    }
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView

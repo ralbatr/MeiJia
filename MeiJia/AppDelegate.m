@@ -7,9 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "HomeViewController.h"
-#import "ServerViewController.h"
-#import "BookViewController.h"
+#import "MainViewController.h"
+
 
 @implementation AppDelegate
 
@@ -19,28 +18,15 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     
-    
-    
-    HomeViewController *homeViewController = [[HomeViewController alloc]init];
-    homeViewController.title = @"美甲秀";
-    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:homeViewController];
-    
-    BookViewController *bookViewController = [[BookViewController alloc] init];
-    bookViewController.title = @"预 约";
-    UINavigationController *bookNavigationController = [[UINavigationController alloc] initWithRootViewController:bookViewController];
-    
-    ServerViewController *serverViewController = [[ServerViewController alloc] init];
-    serverViewController.title = @"会员中心";
-    
-    NSArray *viewControllers = [NSArray arrayWithObjects:navigationController,bookNavigationController,serverViewController, nil];
-    UITabBarController *mainViewController = [[UITabBarController alloc] init];
-    mainViewController.viewControllers = viewControllers;
-    
+    MainViewController *mainViewController = [[MainViewController alloc] init];
+   
     [self.window setRootViewController:mainViewController];
     
     [self.window makeKeyAndVisible];
     return YES;
 }
+
+
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {

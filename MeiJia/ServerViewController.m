@@ -35,13 +35,13 @@
 - (void)creatLabels
 {
     UILabel *userIDlabel = [[UILabel alloc] init];
-    userIDlabel.frame = CGRectMake(10, 65, 188, 30);
+    userIDlabel.frame = CGRectMake(10, 0, 188, 30);
     userIDlabel.text = @"会员卡号：NS54366891";
     userIDlabel.font = [UIFont systemFontOfSize:12];
     [self.view addSubview:userIDlabel];
     
     UILabel *userNamelabel = [[UILabel alloc] init];
-    userNamelabel.frame = CGRectMake(10, 95, 188, 30);
+    userNamelabel.frame = CGRectMake(10, 30, 188, 30);
     userNamelabel.text = @"会员姓名：莉莉丝";
     userNamelabel.font = [UIFont systemFontOfSize:12];
     [self.view addSubview:userNamelabel];
@@ -50,7 +50,7 @@
 - (void)creatButtons
 {
     UIButton *secretChangeButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    secretChangeButton.frame = CGRectMake(180, 65, 88, 60);
+    secretChangeButton.frame = CGRectMake(180, 15, 88, 60);
     [secretChangeButton setTitle:@"修改密码" forState:UIControlStateNormal];
     [self.view addSubview:secretChangeButton];
 }
@@ -58,7 +58,7 @@
 - (void)creatTableView
 {
     _tableView = [[UITableView alloc] init];
-    _tableView.frame = CGRectMake(10, 120, 300, 300);
+    _tableView.frame = CGRectMake(10, 55, 300, 300);
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     [self.view addSubview:_tableView];

@@ -42,17 +42,10 @@
 
 - (void)closeTableView
 {
-    //如果没有在选择状态
-//    if ([self respondsToSelector:@selector(textFieldShouldBeginEditing:)]) {
-//        NSLog(@"不是在选择状态");
-//        [self.dropTableView removeFromSuperview];
-//    }else{
-//          //在选择状态
     if (showList) {
         self.hidden = YES;
         NSLog(@"在选择状态");
     }
-//    }
 }
 
 - (void)creatTableView:(CGRect)frame

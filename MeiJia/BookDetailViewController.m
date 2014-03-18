@@ -43,31 +43,31 @@
 - (void)creatLabel
 {
     UILabel *Idlabel = [[UILabel alloc] init];
-    Idlabel.frame = CGRectMake(15, 65, 220, 30);
+    Idlabel.frame = CGRectMake(15, 0, 220, 30);
     Idlabel.text = @"会员卡号： BJ3457834";
     Idlabel.font = [UIFont systemFontOfSize:12];
     [self.view addSubview:Idlabel];
     
     UILabel *jobIdlabel = [[UILabel alloc] init];
-    jobIdlabel.frame = CGRectMake(15, 95, 220, 30);
+    jobIdlabel.frame = CGRectMake(15, 30, 220, 30);
     jobIdlabel.text = @"技师工号： 009";
     jobIdlabel.font = [UIFont systemFontOfSize:12];
     [self.view addSubview:jobIdlabel];
     
     UILabel *namelabel = [[UILabel alloc] init];
-    namelabel.frame = CGRectMake(15, 125, 120, 30);
+    namelabel.frame = CGRectMake(15, 60, 120, 30);
     namelabel.text = @"预约人姓名：";
     namelabel.font = [UIFont systemFontOfSize:12];
     [self.view addSubview:namelabel];
     
     UILabel *bookTimelabel = [[UILabel alloc] init];
-    bookTimelabel.frame = CGRectMake(15, 155, 80, 30);
+    bookTimelabel.frame = CGRectMake(15, 90, 80, 30);
     bookTimelabel.text = @"预约时间：";
     bookTimelabel.font = [UIFont systemFontOfSize:12];
     [self.view addSubview:bookTimelabel];
     
     UILabel *bookServerlabel = [[UILabel alloc] init];
-    bookServerlabel.frame = CGRectMake(15, 185, 120, 30);
+    bookServerlabel.frame = CGRectMake(15, 125, 120, 30);
     bookServerlabel.text = @"预约服务：";
     bookServerlabel.font = [UIFont systemFontOfSize:12];
     [self.view addSubview:bookServerlabel];
@@ -76,8 +76,8 @@
 - (void)creatCloseButton
 {
     UIButton *closeButton = [[UIButton alloc] init];
-    closeButton.frame = CGRectMake(0, 0, 320, 200);
-    closeButton.backgroundColor = [UIColor grayColor];
+    closeButton.frame = CGRectMake(0, 0, 320, 180);
+
     [closeButton addTarget:self action:@selector(closeKeyboardAndTableView:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:closeButton];
 }
@@ -85,7 +85,7 @@
 - (void)creatTableView
 {
     _tableView = [[UITableView alloc] init];
-    _tableView.frame = CGRectMake(10, 220, 300, 300);
+    _tableView.frame = CGRectMake(10, 155, 300, 300);
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     [self.view addSubview:_tableView];
@@ -105,8 +105,8 @@
 - (void)creatTextField
 {
     _nameTextField = [[UITextField alloc] init];
-    _nameTextField.frame = CGRectMake(90, 130, 120, 25);
-    _nameTextField.backgroundColor = [UIColor greenColor];
+    _nameTextField.frame = CGRectMake(90, 65, 120, 25);
+//    _nameTextField.backgroundColor = [UIColor greenColor];
     _nameTextField.placeholder = @"请输入姓名";
     _nameTextField.font = [UIFont systemFontOfSize:14.0f];
     _nameTextField.delegate = self;
@@ -124,19 +124,19 @@
         [dayArray addObject:dayStr];
     }
     
-    self.day = [[ComboxView alloc] initWithFrame:CGRectMake(75, 160, 90, 30)];
+    self.day = [[ComboxView alloc] initWithFrame:CGRectMake(75, 95, 90, 30)];
     self.day.textField.text = @"今天";
     
     self.day.tableArray = dayArray;
     [self.view addSubview:self.day];
     
-    self.hour = [[ComboxView alloc] initWithFrame:CGRectMake(165, 160, 70, 30)];
+    self.hour = [[ComboxView alloc] initWithFrame:CGRectMake(165, 95, 70, 30)];
     self.hour.textField.text = @"8时";
     NSArray *hourArray=[[NSArray alloc]initWithObjects:@"8时",@"9时",@"10时",@"11时",@"12时",@"13时",@"14时",@"15时",@"16时",@"17时",nil];
     self.hour.tableArray = hourArray;
     [self.view addSubview:self.hour];
     
-    self.minute = [[ComboxView alloc] initWithFrame:CGRectMake(235, 160, 80, 30)];
+    self.minute = [[ComboxView alloc] initWithFrame:CGRectMake(235, 95, 80, 30)];
     self.minute.textField.text = @"00分";
     NSArray *minuteArray=[[NSArray alloc]initWithObjects:@"00分",@"05分",@"10分",@"15分",@"20分",@"25分",@"30分",@"35分",@"40分",@"45分",@"50分",@"55分",nil];
     self.minute.tableArray = minuteArray;

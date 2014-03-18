@@ -11,7 +11,7 @@
 #import "ArtificerView.h"
 
 #define kImageCount 3
-#define kImageHeigh 380
+#define kImageHeigh 350
 @interface AboutViewController ()
 {
     UIPageControl *_pageControl;
@@ -37,7 +37,7 @@
     //作品的滚动展示图片
     [self setImageView];
     //美甲师的简介
-    ArtificerView *artificerView = [[ArtificerView alloc] initWithFrame:CGRectMake(5, 390, 320, 320) WithTarget:self andSelector:@selector(book) andHideWorkYear:NO];
+    ArtificerView *artificerView = [[ArtificerView alloc] initWithFrame:CGRectMake(5, 360, 320, 320) WithTarget:self andSelector:@selector(book) andHideWorkYear:NO];
     [self.view addSubview:artificerView];
 }
 

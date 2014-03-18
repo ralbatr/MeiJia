@@ -40,7 +40,7 @@
 - (void)creatImageView
 {
     UIImageView *imageView = [[UIImageView alloc] init];
-    imageView.frame = CGRectMake(0, 65, 320, 150);
+    imageView.frame = CGRectMake(0, 0, 320, 150);
     imageView.image = [UIImage imageNamed:@"u24_normal.png"];
     [self.view addSubview:imageView];
 }
@@ -48,7 +48,7 @@
 - (void)creatTableView
 {
     _tableView = [[UITableView alloc] init];
-    _tableView.frame = CGRectMake(10, 220, 300, 300);
+    _tableView.frame = CGRectMake(10, 155, 300, 300);
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     [self.view addSubview:_tableView];

@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface HomeViewController : UIViewController <UITableViewDelegate,UITableViewDataSource>
+@interface HomeViewController : BaseViewController <UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic,strong) UITableView *tableView;
 @property (nonatomic,strong) NSArray *discArray;

@@ -147,6 +147,11 @@
 - (void)closeKeyboardAndTableView:(id)sender
 {
     [[[UIApplication sharedApplication] keyWindow] endEditing:YES];
+    [self closeTableView];
+}
+
+- (void)closeTableView
+{
     [self.day closeTableView];
     [self.hour closeTableView];
     [self.minute closeTableView];
@@ -158,6 +163,13 @@
     [textField resignFirstResponder];
     return YES;
 }
+
+- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField
+{
+    [self closeTableView];
+    return YES;
+}
+
 
 #pragma mark - Table view data source
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

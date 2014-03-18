@@ -40,8 +40,9 @@
     HomeViewController *homeViewController = [[HomeViewController alloc]init];
     [homeViewController setTitle:@"美甲秀"];
     BookViewController *bookViewController = [[BookViewController alloc] init];
+    bookViewController.title = @"预约";
     ServerViewController *serverViewController = [[ServerViewController alloc] init];
-    
+    serverViewController.title = @"会员中心";
     NSArray *views = @[homeViewController,bookViewController,serverViewController];
     NSMutableArray *viewControllers = [NSMutableArray arrayWithCapacity:3];
     for (UIViewController *viewController in views) {

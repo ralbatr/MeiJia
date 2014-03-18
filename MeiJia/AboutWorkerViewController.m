@@ -31,7 +31,7 @@
     [super viewDidLoad];
     _bookArray = [NSArray arrayWithObjects:@"套餐类别", @"套餐类别", @"套餐类别", @"套餐类别", nil];
 	// 美甲师 简单介绍
-    [self creatView];
+    [self creatArtificerView];
     // 产品 和 预约列表 两个按钮
     [self creatUISegmentedControl];
     [self initTableViewAndSegment];
@@ -41,25 +41,25 @@
 - (void)initTableViewAndSegment
 {
     _timeSegment = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObjects:@"今天",@"明天",@"后天", nil]];
-    _timeSegment.frame = CGRectMake(10, 200, 300, 35);
+    _timeSegment.frame = CGRectMake(10, 140, 300, 35);
     _timeSegment.selectedSegmentIndex = 0;
     [self.view addSubview:_timeSegment];
     
     _tableView = [[UITableView alloc] init];
-    _tableView.frame = CGRectMake(0, 200, 320, 280);
+    _tableView.frame = CGRectMake(0, 140, 320, 280);
     _tableView.dataSource = self;
     _tableView.delegate = self;
     [self.view addSubview:_tableView];
 }
 
-- (void)creatView
+- (void)creatArtificerView
 {
     //技师个人介绍
-    ArtificerView *artificerView = [[ArtificerView alloc] initWithFrame:CGRectMake(5, 65, 300, 100) WithTarget:self andSelector:@selector(bookArtificer) andHideWorkYear:YES];
+    ArtificerView *artificerView = [[ArtificerView alloc] initWithFrame:CGRectMake(5, 5, 300, 100) WithTarget:self andSelector:@selector(bookArtificer) andHideWorkYear:YES];
     [self.view addSubview:artificerView];
     
     _workYearlabel = [[UILabel alloc] init];
-    _workYearlabel.frame = CGRectMake(190, 90, 200, 30);
+    _workYearlabel.frame = CGRectMake(190, 35, 200, 30);
     _workYearlabel.text = @"工作年限：5年";
     _workYearlabel.font = [UIFont systemFontOfSize:14];
     [self.view addSubview:_workYearlabel];
@@ -70,7 +70,7 @@
     NSArray *array = @[@"可预约服务",@"预约列表"];
     _segmented = [[UISegmentedControl alloc] initWithItems:array];
     _segmented.selectedSegmentIndex = 0;
-    _segmented.frame = CGRectMake(10, 150, 300, 40);
+    _segmented.frame = CGRectMake(10, 90, 300, 40);
     [_segmented addTarget:self action:@selector(action:) forControlEvents:UIControlEventValueChanged];
     [self.view addSubview:_segmented];
 }
@@ -89,13 +89,13 @@
         _workYearlabel.hidden = NO;
         [_segmented setTitle:@"可预约服务" forSegmentAtIndex:0];
         _timeSegment.hidden = YES;
-        _tableView.frame = CGRectMake(0, 200, 320, 280);
+        _tableView.frame = CGRectMake(0, 140, 320, 280);
     }
     else{
         _workYearlabel.hidden = YES;
         _timeSegment.hidden = NO;
         [_segmented setTitle:@"作品" forSegmentAtIndex:0];
-        _tableView.frame = CGRectMake(0, 240, 320, 280);
+        _tableView.frame = CGRectMake(0, 180, 320, 280);
     }
     [_tableView reloadData];
 }
